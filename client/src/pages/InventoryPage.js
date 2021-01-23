@@ -3,11 +3,9 @@ import { Col, Row, Container } from "../components/Grid";
 
 const InventoryPage = () => {
   return (
-    <div className="fader">
     <Container fluid>
-      <p>inventory goes here</p>
+      <p>Inventory goes here</p>
     </Container>
-    </div>
   );
 };
 

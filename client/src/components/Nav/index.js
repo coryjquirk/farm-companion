@@ -18,7 +18,7 @@ function Nav() {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbarList">
           <li>
-            <a href="https://frogtownfarm.herokuapp.com"><img id="ffLogo" src="https://handsontwincities.galaxydigital.com/content/handsontwincities.galaxydigital.com/agency/89969.jpg?1535644146?area=agency" alt="frogtown farm logo"/></a>
+            <a href="/home"><img id="ffLogo" src="https://handsontwincities.galaxydigital.com/content/handsontwincities.galaxydigital.com/agency/89969.jpg?1535644146?area=agency" alt="frogtown farm logo"/></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/home">

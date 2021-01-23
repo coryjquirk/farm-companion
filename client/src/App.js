@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 //router
-import PrivateRoute from "./components/private-route/PrivateRoute";
 //managing state based on login status
-import { StoreProvider } from "./utils/GlobalState";
-import { Provider } from "react-redux";
 import store from "./store";
 import setAuthToken from "./utils/setAuthToken";
 import jwt_decode from "jwt-decode";
@@ -41,18 +38,16 @@ if (localStorage.jwtToken) {
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <StoreProvider>
           <Router>
             <Nav />
             <Footer />
             <div className="fader">
               <Switch>
-                <Route exact path="/" component={Login} />
+                <Route exact path="/" component={Home} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
-                <PrivateRoute path="/home" component={Home} />
-                <PrivateRoute
+                <Route path="/home" component={Home} />
+                <Route
                   exact
                   path="/inventory"
                   component={InventoryPage}
@@ -61,8 +56,6 @@ class App extends Component {
               </Switch>
             </div>
           </Router>
-        </StoreProvider>
-      </Provider>
     );
   }
 }

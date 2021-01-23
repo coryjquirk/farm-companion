@@ -3,6 +3,8 @@
 }
 
 .fader {
+  border: 1px solid black;
+  margin: 100px 100px 100px 200px;
   animation: fadeIn ease .3s;
   -webkit-animation: fadeIn ease .3s;
   -moz-animation: fadeIn ease .3s;
