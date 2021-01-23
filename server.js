@@ -25,9 +25,7 @@ app.use(passport.initialize());
 require("./config/passport")(passport);
 // Routes
 app.use("/api/users", users);
-// const express = require("express");
 const path = require("path");
-// const mongoose = require("mongoose");
 const cors = require("cors");
 const PORT = process.env.PORT || 3001;
 // app.listen(PORT, () => console.log(`Server up and running on port ${PORT} !`));
@@ -45,7 +43,7 @@ var session = require("express-session");
 // Requiring passport as we've configured it
 // var passport = require("./config/passport");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/cashCroc", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/frogtownFarm", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -96,7 +94,6 @@ app.get("/users", (req, res) => {
     }
   });
 });
-
 app.post("/saveUser", (req, res) => {
   const user = new User({
     username: req.body.userName,
@@ -111,10 +108,8 @@ app.post("/saveUser", (req, res) => {
       res.status(500).send(err.message);
     });
 });
-
 //===================================================================
 // Inventory DB routes
-
 app.get("/getItem/:id", (req, res) => {
   const id = req.params.id;
   InventoryItem.findById(id, function (err, data) {
@@ -125,7 +120,6 @@ app.get("/getItem/:id", (req, res) => {
     }
   });
 });
-
 app.get("/getItemName/:name", (req, res) => {
   const name = req.params.name;
   InventoryItem.findOne({ itemName: name }, function (err, inventoryItem) {
@@ -137,9 +131,7 @@ app.get("/getItemName/:name", (req, res) => {
     }
   });
 });
-
 app.use("/", userController);
-
 app.get("/inventory", (req, res) => {
   InventoryItem.find((err, users) => {
     if (err) {
@@ -149,7 +141,6 @@ app.get("/inventory", (req, res) => {
     }
   });
 });
-
 app.post("/saveItem", (req, res) => {
   const inventoryItem = new InventoryItem({
     itemName: req.body.itemName,
@@ -166,7 +157,6 @@ app.post("/saveItem", (req, res) => {
       res.status(500).send(err.message);
     });
 });
-
 app.post("/updateItem/:id", (req, res) => {
   let id = req.params.id;
   InventoryItem.findById(id, (err, item) => {
@@ -197,10 +187,8 @@ app.post("/updateItem/:id", (req, res) => {
     }
   });
 });
-
 //===================================================================
 // Cart DB routes
-
 app.get("/cartItem/:id", (req, res) => {
   const id = req.params.id;
   CartItem.findById(id, function (err, data) {
@@ -211,7 +199,6 @@ app.get("/cartItem/:id", (req, res) => {
     }
   });
 });
-
 app.get("/cart", (req, res) => {
   CartItem.find((err, cartItems) => {
     if (err) {
@@ -221,7 +208,6 @@ app.get("/cart", (req, res) => {
     }
   });
 });
-
 app.post("/saveCartItem", (req, res) => {
   const cartItem = new CartItem({
     username: req.body.username,
@@ -240,7 +226,6 @@ app.post("/saveCartItem", (req, res) => {
       res.status(500).send(err.message);
     });
 });
-
 app.post("/updateCartItem/:id", (req, res) => {
   let id = req.params.id;
   CartItem.findById(id, (err, item) => {
@@ -255,14 +240,12 @@ app.post("/updateCartItem/:id", (req, res) => {
           .then((item) => {
             res.json(item);
           })
-
           .catch((err) =>
             res.status(500).send("Error message :" + err.message)
           );
     }
   });
 });
-
 app.delete("/deleteCartItem/:id", (req, res) => {
   let id = req.params.id;
   console.log(id);
@@ -271,10 +254,8 @@ app.delete("/deleteCartItem/:id", (req, res) => {
     console.log("Successful deletion");
   });
 });
-
 // =============================================================
 // Order History DB routing
-
 app.get("/cartItem/:id", (req, res) => {
   const id = req.params.id;
   CartItem.findById(id, function (err, data) {
@@ -285,7 +266,6 @@ app.get("/cartItem/:id", (req, res) => {
     }
   });
 });
-
 app.get("/orders", (req, res) => {
   Order.find((err, orderHistory) => {
     if (err) {
@@ -295,7 +275,6 @@ app.get("/orders", (req, res) => {
     }
   });
 });
-
 app.post("/saveOrder", (req, res) => {
   const order = new Order({
     // PASSPORT WILL = req.user.username
@@ -303,7 +282,6 @@ app.post("/saveOrder", (req, res) => {
     order: req.body,
     orderDate: Date.now(),
   });
-
   order
     .save()
     .then((order) => {
@@ -313,7 +291,6 @@ app.post("/saveOrder", (req, res) => {
       res.status(500).send(err.message);
     });
 });
-
 app.post("/updateCartItem/:id", (req, res) => {
   let id = req.params.id;
   CartItem.findById(id, (err, item) => {
@@ -334,7 +311,6 @@ app.post("/updateCartItem/:id", (req, res) => {
     }
   });
 });
-
 app.delete("/deleteCartItem/:id", (req, res) => {
   let id = req.params.id;
   console.log(id);
@@ -343,13 +319,11 @@ app.delete("/deleteCartItem/:id", (req, res) => {
     console.log("Successful deletion");
   });
 });
-
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-
 app.listen(PORT, function () {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
