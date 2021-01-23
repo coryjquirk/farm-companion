@@ -1,0 +1,34 @@
+#farmNav {
+  float: left;
+  background-color: rgb(253, 201, 133);
+  width: 150px;
+  height: 450px;
+}
+.navbar li {
+  background-color: #f8f9fa;
+}
+#ffLogo{
+    height: 135px;
+    width: 135px;
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.nav-link{
+    color: rgb(136, 136, 136);
+}
+.navbar ul {
+    padding-inline-start: 0px;
+}
+.navbarList {
+  color: rgba(0, 0, 0, 0.5);
+  list-style: none;
+}
+.navbarList .navLink {
+  padding-right: 0;
+  padding-left: 0;
+}
