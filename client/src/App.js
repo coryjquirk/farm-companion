@@ -13,6 +13,7 @@ import InventoryPage from "./pages/InventoryPage";
 import NoMatchPage from "./pages/NoMatchPage";
 //custom components
 import Nav from "./components/Nav";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
@@ -40,6 +41,7 @@ class App extends Component {
     return (
           <Router>
             <Nav />
+            <Header/>
             <Footer />
             <div className="fader">
               <Switch>
