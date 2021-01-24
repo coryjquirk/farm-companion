@@ -28,7 +28,7 @@ function Nav() {
             </a>
           </li>
           <li class="mainNav nav-item">
-            <a class="nav-link" href="/inventory">
+            <a class="nav-link" href="/seedinventory">
               Inventory
             </a>
           </li>

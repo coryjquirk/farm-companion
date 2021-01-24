@@ -1,0 +1,19 @@
+#historyPages{
+    padding: 25px 30px 25px 30px;
+}
+#externalLink{
+    color: rgb(145, 145, 145);
+    font-size: small;
+}
+#farmSign{
+width: 350px;
+float: left;
+margin: 10px 10px 10px 10px;
+}
+@media screen and (max-width: 600px) {
+    #farmSign{
+width: 40%   ;
+margin: 10px 10px 10px 0px;
+
+    }
+}
