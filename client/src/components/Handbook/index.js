@@ -7,41 +7,34 @@ const cardStyle = {
   maxWidth: "400px",
 };
 
-function HomeLaunchers() {
+function Handbook() {
   return (
     <div>
-      <a href="/seedinventory">
+      <a href="/frogtownhistory">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Seed Inventory</span>
+            <span>History of Frogtown</span>
           </h3>
         </div>
       </a>
-      <a href="/timecard">
+      <a href="/farmhistory">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Time Card</span>
+            <span>History of the farm</span>
           </h3>
         </div>
       </a>
-      <a href="/handbook">
+      <a href="/communitypartners">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Employee Handbook</span>
+            <span>Community partners</span>
           </h3>
         </div>
       </a>
-      <a href="/options">
+      <a href="/whatwedo">
         <div class="homeLauncher" style={cardStyle}>
-          <h3 class="text-muted">
-            <span>Options</span>
-          </h3>
-        </div>
-      </a>
-      <a href="/dashboard">
-        <div class="homeLauncher" style={cardStyle}>
-          <h3 class="text-muted">
-            <span>Sign me out</span>
+          <h3>
+            <span>What we do</span>
           </h3>
         </div>
       </a>
@@ -49,4 +42,4 @@ function HomeLaunchers() {
   );
 }
 
-export default HomeLaunchers;
+export default Handbook;

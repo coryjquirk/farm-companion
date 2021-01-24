@@ -9,12 +9,16 @@ import jwt_decode from "jwt-decode";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 //pages
 import Home from "./pages/HomePage";
-import InventoryPage from "./pages/InventoryPage";
+import SeedInventoryPage from "./pages/SeedInventoryPage";
 import NoMatchPage from "./pages/NoMatchPage";
+import Options from "./pages/OptionsPage";
+import Handbook from "./pages/HandbookPage";
 //custom components
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import FarmHistory from "./components/FarmHistory";
+import FrogtownHistory from "./components/FrogtownHistory";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 // Check for token to keep user logged in
@@ -49,11 +53,15 @@ class App extends Component {
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
                 <Route path="/home" component={Home} />
+                <Route path="/options" component={Options} />
+                <Route path="/handbook" component={Handbook} />
                 <Route
                   exact
-                  path="/inventory"
-                  component={InventoryPage}
+                  path="/seedinventory"
+                  component={SeedInventoryPage}
                 />
+                <Route path="/farmhistory" component={FarmHistory} />
+                <Route path="/frogtownhistory" component={FrogtownHistory} />
                 <Route component={NoMatchPage} />
               </Switch>
             </div>
