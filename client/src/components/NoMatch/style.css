@@ -1,0 +1,33 @@
+#goinHome{
+    height: 15px;
+    width: 15px;
+}
+#goinHomeBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#goinHomeBtn:hover{
+    transition: 2s;
+}
+#goinHomeBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+#goinHomeBtn:hover span {
+    padding-right: 25px;
+}
+#goinHomeBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#stock404{
+width: 80%;
+    display: block;
+    margin: 0px auto 0px auto;
+}

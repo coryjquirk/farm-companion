@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import FrogtownLogo from "./logo512.png"
 
 function Nav() {
   return (
@@ -15,27 +16,28 @@ function Nav() {
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a href="/home"><img id="mobileLogo" src={FrogtownLogo} alt="frogtown farm logo"/></a>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbarList">
+        <ul class="navbarList" id="navbar-nav">
           <li>
-            <a href="https://frogtownfarm.herokuapp.com"><img id="ffLogo" src="https://handsontwincities.galaxydigital.com/content/handsontwincities.galaxydigital.com/agency/89969.jpg?1535644146?area=agency" alt="frogtown farm logo"/></a>
+            <a href="/home"><img id="desktopLogo" src={FrogtownLogo} alt="frogtown farm logo"/></a>
           </li>
-          <li class="nav-item">
+          <li class="mainNav nav-item">
             <a class="nav-link" href="/home">
               Home
             </a>
           </li>
-          <li class="nav-item">
+          <li class="mainNav nav-item">
             <a class="nav-link" href="/inventory">
               Inventory
             </a>
           </li>
-          <li class="nav-item">
+          <li class="mainNav nav-item">
             <a class="nav-link" href="/timecard">
               Time card
             </a>
           </li>
-          <li class="nav-item">
+          <li class="mainNav nav-item">
             <a class="nav-link" href="/handbook">
               Handbook
             </a>

@@ -1,13 +1,12 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
+import SeedInventory from "../components/SeedInventory"
 
 const InventoryPage = () => {
   return (
-    <div className="fader">
     <Container fluid>
-      <p>inventory goes here</p>
+      <SeedInventory></SeedInventory>
     </Container>
-    </div>
   );
 };
 
