@@ -3,52 +3,43 @@ import "./style.css";
 import Texture from "./45-degree-fabric-light.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
-import { faCog } from "@fortawesome/free-solid-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const cardStyle = {
   backgroundImage: `url(${Texture})`,
   maxWidth: "400px",
 };
 
-function HomeLaunchers() {
+function InventoryLaunchers() {
   return (
     <div>
-      <a href="/inventoryhome">
+      <a href="/seedinventory">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Inventory</span>
+            <span>Seed Inventory</span>
           </h3>
         </div>
       </a>
-      <a href="/timecard">
+      <a href="/generalinventory">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Time Card</span>
+            <span>General Inventory</span>
           </h3>
         </div>
       </a>
-      <a href="/handbook">
-        <div class="homeLauncher" style={cardStyle}>
-          <h3>
-            <span>Employee Handbook</span>
-          </h3>
-        </div>
-      </a>
-      <a href="/options">
+      <a href="/">
         <div class="homeLauncher" style={cardStyle}>
           <h3 class="text-muted">
-            <span>Options <FontAwesomeIcon
+            <span><FontAwesomeIcon
                 id="goinHome"
-                icon={faCog}
+                icon={faArrowLeft}
+                class="fas fa-home"
+              /> Home <FontAwesomeIcon
+                id="goinHome"
+                icon={faHome}
                 class="fas fa-home"
               /></span>
-          </h3>
-        </div>
-      </a>
-      <a href="/dashboard">
-        <div class="homeLauncher" style={cardStyle}>
-          <h3 class="text-muted">
-            <span>Sign me out</span>
           </h3>
         </div>
       </a>
@@ -56,4 +47,4 @@ function HomeLaunchers() {
   );
 }
 
-export default HomeLaunchers;
+export default InventoryLaunchers;
