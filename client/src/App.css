@@ -4,7 +4,7 @@
 
 .fader {
   /* border: 1px solid black; */
-  margin: 100px 100px 100px 200px;
+  margin: 80px 100px 100px 200px;
   animation: fadeIn ease 0.3s;
   -webkit-animation: fadeIn ease 0.3s;
   -moz-animation: fadeIn ease 0.3s;
@@ -54,12 +54,12 @@
 
 @media only screen and (max-width: 992px) {
   .fader {
-    margin: 130px 10px 0px 10px;
+    margin: 140px 10px 0px 10px;
   }
 }
 @media screen and (max-width: 600px) {
   .fader {
-    margin: 130px 5px 0px 5px;
+    margin: 140px 5px 0px 5px;
   }
   .container-fluid{
     padding-left: 0px;

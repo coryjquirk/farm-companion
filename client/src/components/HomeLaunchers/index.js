@@ -48,7 +48,7 @@ function HomeLaunchers() {
       <a href="/dashboard">
         <div class="homeLauncher" style={cardStyle}>
           <h3 class="text-muted">
-            <span>Sign me out</span>
+            <span>Sign out</span>
           </h3>
         </div>
       </a>

@@ -3,6 +3,7 @@ import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function NoMatch() {
   return (
@@ -25,7 +26,11 @@ function NoMatch() {
         <a href="/home">
           <button id="goinHomeBtn" type="button" class="btn btn-success">
             <span>
-              Headin' back home?{" "}
+            <FontAwesomeIcon
+                id="goinHome"
+                icon={faArrowLeft}
+                class="fas fa-home"
+              />{" "}Return home{" "}
               <FontAwesomeIcon
                 id="goinHome"
                 icon={faHome}

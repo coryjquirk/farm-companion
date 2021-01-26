@@ -31,15 +31,19 @@ function InventoryLaunchers() {
       <a href="/">
         <div class="homeLauncher" style={cardStyle}>
           <h3 class="text-muted">
-            <span><FontAwesomeIcon
+            <span>
+              <FontAwesomeIcon
                 id="goinHome"
                 icon={faArrowLeft}
                 class="fas fa-home"
-              /> Home <FontAwesomeIcon
+              />{" "}
+              Home{" "}
+              <FontAwesomeIcon
                 id="goinHome"
                 icon={faHome}
                 class="fas fa-home"
-              /></span>
+              />
+            </span>
           </h3>
         </div>
       </a>

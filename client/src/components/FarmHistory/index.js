@@ -1,9 +1,10 @@
 import React from "react";
 import { Col, Row, Container } from "../Grid";
-import "./style.css"
+import "./style.css";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const FarmHistory = () => {
   return (
@@ -15,7 +16,11 @@ const FarmHistory = () => {
           secure 13 acres of green space in the diverse and vibrant neighborhood
           of Frogtown.
         </p>
-        <img src="https://saintpaul.s3.amazonaws.com/CMS/6609/frogtownfarm-2__mobile.jpg" alt="farm sign" id="farmSign"></img>
+        <img
+          src="https://saintpaul.s3.amazonaws.com/CMS/6609/frogtownfarm-2__mobile.jpg"
+          alt="farm sign"
+          id="farmSign"
+        ></img>
         <p>
           In partnership with the Trust for Public Land, the City of St. Paul
           and the Wilder Foundation, Frogtown Park & Farm was created as a
@@ -25,15 +30,21 @@ const FarmHistory = () => {
           The farm now sits within this public park and is a 501(c)(3)
           non-profit organization.
         </p>
-        <p id="externalLink">Taken from the <a href="https://www.frogtownfarm.org/our-story">Frogtown Farm website</a></p>
+        <p id="externalLink">
+          Source:{" "}
+          <a href="https://www.frogtownfarm.org/our-story">
+            Frogtown Farm website
+          </a>
+        </p>
         <p id="subText">
-          Back to{" "}  
           <a href="/handbook">
-          Employee Handbook <FontAwesomeIcon
-                id="goinHome"
-                icon={faBook}
-                class="fas fa-book"
-              />
+            <FontAwesomeIcon
+              id="goinHome"
+              icon={faArrowLeft}
+              class="fas fa-book"
+            />{" "}
+            Back to Employee Handbook{" "}
+            <FontAwesomeIcon id="goinHome" icon={faBook} class="fas fa-book" />
           </a>
         </p>
       </div>

@@ -10,8 +10,11 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 //pages
 import Home from "./pages/HomePage";
 import InventoryLaunch from "./pages/InventoryLaunch";
+import DirectoryLaunch from "./pages/DirectoryLaunch";
 import SeedInventoryPage from "./pages/SeedInventoryPage";
 import GeneralInventoryPage from "./pages/GeneralInventoryPage";
+import TimeCard from "./components/TimeCard";
+import Partners from "./components/Partners"
 import NoMatchPage from "./pages/NoMatchPage";
 import Options from "./pages/OptionsPage";
 import Handbook from "./pages/HandbookPage";
@@ -58,7 +61,10 @@ class App extends Component {
             <Route path="/options" component={Options} />
             <Route path="/handbook" component={Handbook} />
             <Route exact path="/inventoryhome" component={InventoryLaunch} />
+            <Route exact path="/directoryhome" component={DirectoryLaunch} />
+            <Route exact path="/Partners" component={Partners} />
             <Route exact path="/seedinventory" component={SeedInventoryPage} />
+            <Route exact path="/timecard" component={TimeCard} />
             <Route exact path="/generalinventory" component={GeneralInventoryPage} />
             <Route path="/farmhistory" component={FarmHistory} />
             <Route path="/frogtownhistory" component={FrogtownHistory} />
