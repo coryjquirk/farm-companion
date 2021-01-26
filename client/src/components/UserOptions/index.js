@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 // https://react-popup.elazizi.com/
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
+
 function UserOptions() {
   return (
     <div id="userOptions">
       <h3>User Options</h3>
+      <p id="subText">
+        (This site is still in development, so this page is just for show)
+      </p>
       <ui>
-        <li>This</li>
-        <li>That</li>
+        <li>
+          <button>This</button>
+        </li>
+        <li>
+          <button>That</button>
+        </li>
       </ui>
       <p>
         The other: <input placeholder="type here"></input>

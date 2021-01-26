@@ -9,7 +9,9 @@ import jwt_decode from "jwt-decode";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 //pages
 import Home from "./pages/HomePage";
+import InventoryLaunch from "./pages/InventoryLaunch";
 import SeedInventoryPage from "./pages/SeedInventoryPage";
+import GeneralInventoryPage from "./pages/GeneralInventoryPage";
 import NoMatchPage from "./pages/NoMatchPage";
 import Options from "./pages/OptionsPage";
 import Handbook from "./pages/HandbookPage";
@@ -43,29 +45,27 @@ if (localStorage.jwtToken) {
 class App extends Component {
   render() {
     return (
-          <Router>
-            <Nav />
-            <Header/>
-            <Footer />
-            <div className="fader">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/register" component={Register} />
-                <Route path="/home" component={Home} />
-                <Route path="/options" component={Options} />
-                <Route path="/handbook" component={Handbook} />
-                <Route
-                  exact
-                  path="/seedinventory"
-                  component={SeedInventoryPage}
-                />
-                <Route path="/farmhistory" component={FarmHistory} />
-                <Route path="/frogtownhistory" component={FrogtownHistory} />
-                <Route component={NoMatchPage} />
-              </Switch>
-            </div>
-          </Router>
+      <Router>
+        <Nav />
+        <Header />
+        <Footer />
+        <div className="fader">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
+            <Route path="/home" component={Home} />
+            <Route path="/options" component={Options} />
+            <Route path="/handbook" component={Handbook} />
+            <Route exact path="/inventoryhome" component={InventoryLaunch} />
+            <Route exact path="/seedinventory" component={SeedInventoryPage} />
+            <Route exact path="/generalinventory" component={GeneralInventoryPage} />
+            <Route path="/farmhistory" component={FarmHistory} />
+            <Route path="/frogtownhistory" component={FrogtownHistory} />
+            <Route component={NoMatchPage} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
