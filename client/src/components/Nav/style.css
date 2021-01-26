@@ -44,7 +44,7 @@
 }
 @media only screen and (max-width: 992px) {
   #farmNav {
-    float: none;
+  float: none;
   width: 100%;
   height: auto;
 }

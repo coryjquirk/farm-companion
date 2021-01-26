@@ -34,12 +34,22 @@ function Nav() {
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/timecard">
-              Time card
+              Time Card
             </a>
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/handbook">
               Handbook
+            </a>
+          </li>
+          <li class="mainNav nav-item">
+            <a class="nav-link" href="/directoryhome">
+              Directory
+            </a>
+          </li>
+          <li class="mainNav nav-item">
+            <a class="nav-link" href="/documents">
+              Documents
             </a>
           </li>
           <li class="nav-item">
