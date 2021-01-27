@@ -9,7 +9,6 @@ body p{
   font-family: adobe-garamond-pro;
 }
 .fader {
-  /* border: 1px solid black; */
   margin: 80px 100px 100px 200px;
   animation: fadeIn ease 0.3s;
   -webkit-animation: fadeIn ease 0.3s;
