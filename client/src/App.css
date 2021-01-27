@@ -1,7 +1,13 @@
 .App {
   text-align: left;
 }
-
+/* Roboto & adobe-garamond-pro to mirror current Frogtown Farm site */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+body p{
+  font-family: adobe-garamond-pro;
+}
 .fader {
   /* border: 1px solid black; */
   margin: 80px 100px 100px 200px;
