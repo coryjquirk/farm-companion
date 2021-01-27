@@ -27,6 +27,7 @@ import FarmHistory from "./components/FarmHistory";
 import FrogtownHistory from "./components/FrogtownHistory";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
+import ScrollArrow from "./components/ScrollArrow";
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -73,6 +74,7 @@ class App extends Component {
             <Route component={NoMatchPage} />
           </Switch>
         </div>
+        <ScrollArrow/>
       </Router>
     );
   }

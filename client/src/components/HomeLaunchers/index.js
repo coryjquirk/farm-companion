@@ -12,7 +12,7 @@ const cardStyle = {
 
 function HomeLaunchers() {
   return (
-    <div>
+    <div id="homeLauncherList">
       <a href="/inventoryhome">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
@@ -31,6 +31,27 @@ function HomeLaunchers() {
         <div class="homeLauncher" style={cardStyle}>
           <h3>
             <span>Employee Handbook</span>
+          </h3>
+        </div>
+      </a>
+      <a href="/directoryhome">
+        <div class="homeLauncher" style={cardStyle}>
+          <h3>
+            <span>Directory</span>
+          </h3>
+        </div>
+      </a>
+      <a href="/documents">
+        <div class="homeLauncher" style={cardStyle}>
+          <h3>
+            <span>Documents</span>
+          </h3>
+        </div>
+      </a>
+      <a href="/farmmap">
+        <div class="homeLauncher" style={cardStyle}>
+          <h3>
+            <span>Map</span>
           </h3>
         </div>
       </a>
