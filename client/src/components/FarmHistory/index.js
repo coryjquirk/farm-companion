@@ -47,6 +47,21 @@ const FarmHistory = () => {
             <FontAwesomeIcon id="goinHome" icon={faBook} class="fas fa-book" />
           </a>
         </p>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              title="farm map"
+              width="646"
+              height="491"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=941%20Lafond%20Ave,%20St%20Paul,%20MN%2055104&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </Container>
   );

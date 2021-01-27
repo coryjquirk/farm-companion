@@ -15,6 +15,7 @@ import SeedInventoryPage from "./pages/SeedInventoryPage";
 import GeneralInventoryPage from "./pages/GeneralInventoryPage";
 import TimeCard from "./components/TimeCard";
 import Partners from "./components/Partners"
+import FarmMap from "./components/FarmMap"
 import NoMatchPage from "./pages/NoMatchPage";
 import Options from "./pages/OptionsPage";
 import Handbook from "./pages/HandbookPage";
@@ -65,6 +66,7 @@ class App extends Component {
             <Route exact path="/Partners" component={Partners} />
             <Route exact path="/seedinventory" component={SeedInventoryPage} />
             <Route exact path="/timecard" component={TimeCard} />
+            <Route exact path="/farmmap" component={FarmMap} />
             <Route exact path="/generalinventory" component={GeneralInventoryPage} />
             <Route path="/farmhistory" component={FarmHistory} />
             <Route path="/frogtownhistory" component={FrogtownHistory} />

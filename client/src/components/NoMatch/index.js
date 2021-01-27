@@ -19,7 +19,7 @@ function NoMatch() {
       >
         {" "}
         <h3>404 - Page not found</h3>
-        <p>
+        <p id="buckShot">
           Maybe we're plotting something new here.
           <i class="fas fa-tractor"></i>
         </p>

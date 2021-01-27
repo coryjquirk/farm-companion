@@ -23,7 +23,9 @@
     width: 75px;
 }
 .nav-link{
-    color: rgb(136, 136, 136);
+  color: rgb(136, 136, 136);
+  padding: 6px 5px 6px 5px;
+
 }
 .navbar ul {
     padding-inline-start: 0px;

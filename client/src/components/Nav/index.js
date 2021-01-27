@@ -1,12 +1,15 @@
 import React from "react";
 import "./style.css";
-import FrogtownLogo from "./logo512.png"
+import FrogtownLogo from "./logo512.png";
+// https://react-popup.elazizi.com/
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 function Nav() {
   return (
     <nav id="farmNav" class="navbar navbar-expand-lg navbar-light bg-light">
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -14,13 +17,21 @@ function Nav() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <a href="/home"><img id="mobileLogo" src={FrogtownLogo} alt="frogtown farm logo"/></a>
+      <a href="/home">
+        <img id="mobileLogo" src={FrogtownLogo} alt="frogtown farm logo" />
+      </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbarList" id="navbar-nav">
           <li>
-            <a href="/home"><img id="desktopLogo" src={FrogtownLogo} alt="frogtown farm logo"/></a>
+            <a href="/home">
+              <img
+                id="desktopLogo"
+                src={FrogtownLogo}
+                alt="frogtown farm logo"
+              />
+            </a>
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/home">
@@ -52,15 +63,25 @@ function Nav() {
               Documents
             </a>
           </li>
+          <li class="mainNav nav-item">
+            <a class="nav-link" href="/farmmap">
+              Map
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="/options">
               Options
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/dashboard">
-              Sign out
-            </a>
+            <Popup
+              trigger={
+                <span class="nav-link">Sign out</span>
+              }
+              position="right center"
+            >
+              <div className="my-popup">Authentication coming soon!</div>
+            </Popup>
           </li>
         </ul>
       </div>
