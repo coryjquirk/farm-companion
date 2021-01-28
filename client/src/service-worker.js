@@ -9,14 +9,13 @@ const FILES_TO_CACHE = [
     "../public/logo16.png",
     "../public/logo32.png",
     "../public/logo192.png",
-    "../public/logo512.png",
+    "../public/logo512.png"
   ];
   
   const CACHE_NAME = "static-cache-v2";
   const DATA_CACHE_NAME = "data-cache-v1";
-  
   // install
-  self.addEventListener("install", function(evt) {
+  window.self.addEventListener("install", function(evt) {
     evt.waitUntil(
       caches.open(CACHE_NAME).then(cache => {
         console.log("Your files were pre-cached successfully!");
@@ -24,10 +23,10 @@ const FILES_TO_CACHE = [
       })
     );
   
-    self.skipWaiting();
+    window.self.skipWaiting();
   });
   
-  self.addEventListener("activate", function(evt) {
+  window.self.addEventListener("activate", function(evt) {
     evt.waitUntil(
       caches.keys().then(keyList => {
         return Promise.all(
@@ -41,11 +40,11 @@ const FILES_TO_CACHE = [
       })
     );
   
-    self.clients.claim();
+    window.self.clients.claim();
   });
   
   // fetch
-  self.addEventListener("fetch", function(evt) {
+  window.self.addEventListener("fetch", function(evt) {
     // cache successful requests to the API
     if (evt.request.url.includes("/api/")) {
       evt.respondWith(
