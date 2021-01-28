@@ -35,48 +35,48 @@ function Nav() {
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/home">
-              Home
+              HOME
             </a>
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/inventoryhome">
-              Inventory
+              INVENTORY
             </a>
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/timecard">
-              Time Card
+              TIME CLOCK
             </a>
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/handbook">
-              Handbook
+              HANDBOOK
             </a>
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/directoryhome">
-              Directory
+              DIRECTORY
             </a>
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/documents">
-              Documents
+              DOCUMENTS
             </a>
           </li>
           <li class="mainNav nav-item">
             <a class="nav-link" href="/farmmap">
-              Map
+              MAP
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/options">
-              Options
+              OPTIONS
             </a>
           </li>
           <li class="nav-item">
             <Popup
               trigger={
-                <span class="nav-link">Sign out</span>
+                <span class="nav-link">SIGN OUT</span>
               }
               position="right center"
             >

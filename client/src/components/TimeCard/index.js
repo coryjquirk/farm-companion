@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
+import WorldClock from "../WorldClock"
 import { Col, Row, Container } from "../Grid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
@@ -11,7 +12,25 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
 //mad table tips from here: https://dev.to/abdulbasit313/an-easy-way-to-create-a-customize-dynamic-table-in-react-js-3igg
-
+function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+  return hour + " : " + min + " : " + sec;
+}
+function updateTime(k) {
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
 function getCurrentDate(separator = " ") {
   let newDate = new Date();
   let date = newDate.getDate();
@@ -48,7 +67,6 @@ function getCurrentDate(separator = " ") {
     weekday + ","
   }${separator}${realMonth}${separator}${date}${separator}${year}`;
 }
-console.log("HEYO" + getCurrentDate());
 
 class TimeCard extends Component {
   constructor(props) {
@@ -115,6 +133,7 @@ class TimeCard extends Component {
       <Container>
         <div>
           <h1 id="title">Time Sheet</h1>
+          <p>Time: {currentTime()}</p>
           <p>
             Today: {getCurrentDate()}{" "}
             <Popup trigger={<button>Check In</button>} position="right center">
