@@ -19,13 +19,13 @@ function Nav() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <a href="/home">
+      <a href="/">
         <img id="mobileLogo" src={FrogtownLogo} alt="frogtown farm logo" />
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbarList" id="navbar-nav">
           <li class="nav-link">
-            <a href="/home">
+            <a href="/">
               <img
                 id="desktopLogo"
                 src={FrogtownLogo}
@@ -75,9 +75,7 @@ function Nav() {
           </li>
           <li class="nav-item">
             <Popup
-              trigger={
-                <span class="nav-link">SIGN OUT</span>
-              }
+              trigger={<span class="nav-link">SIGN OUT</span>}
               position="right center"
             >
               <div className="my-popup">Authentication coming soon!</div>
