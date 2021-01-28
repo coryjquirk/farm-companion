@@ -56,7 +56,7 @@ class App extends Component {
         <Footer />
         <div className="fader">
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Login} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route path="/home" component={Home} />

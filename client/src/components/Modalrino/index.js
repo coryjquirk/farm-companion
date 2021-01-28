@@ -35,7 +35,6 @@ function Modalrino() {
         </button>
         <WeekSheet/>
         <button onClick={closeModal()} id="goinHomeBtn" type="button" class="btn btn-success">
-            <span>
             <FontAwesomeIcon
                 id="goinHome"
                 icon={faArrowLeft}
@@ -46,7 +45,6 @@ function Modalrino() {
                 icon={faStopwatch}
                 class="fas fa-home"
               />
-            </span>
           </button>
     </Modal>
   );
