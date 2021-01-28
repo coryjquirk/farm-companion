@@ -15,6 +15,8 @@
   left: 0;
   top: 0;
   z-index: 1;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+  font-weight: bold;
 }
 .navbar li {
   background-color: #f8f9fa;

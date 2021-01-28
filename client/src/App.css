@@ -5,8 +5,12 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
-body p{
-  font-family: adobe-garamond-pro;
+body p, body h1, body h2, body h3{
+  font-family: AGaramond;
+}
+@font-face {
+  font-family: 'AGaramond';
+  src: local('AGaramond'), url(./fonts/AGaramond-Regular.otf) format('opentype');
 }
 .fader {
   margin: 80px 100px 100px 200px;

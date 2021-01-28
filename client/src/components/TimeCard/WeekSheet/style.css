@@ -1,0 +1,48 @@
+#excelFrame {
+  width: 100%;
+  height: 800px;
+}
+#title {
+  text-align: center;
+}
+.timeClockBtn {
+  margin: 0px 5px 0px 5px;
+}
+#timeTable {
+  text-align: center;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+}
+#timeTable td,
+#timeTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#timeTable tr:nth-child(even) {
+  background-color: #6e6e6e;
+}
+#timeTable tr:hover {
+  background-color: #dbeadd;
+  color: black
+}
+#timeTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #1f813f;
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  #timeTable {
+    width: 75%;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #timeTable {
+    width: 75%;
+    font-size: 10px;
+  }
+}

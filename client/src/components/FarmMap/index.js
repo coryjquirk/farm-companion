@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Texture from "./45-degree-fabric-light.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
 import { faHome } from "@fortawesome/free-solid-svg-icons";
