@@ -48,14 +48,7 @@ import ScrollArrow from "./components/ScrollArrow";
 //     window.location.href = "./login";
 //   }
 // }
-// Check that service workers are supported
-if ('serviceWorker' in navigator) {
-  window.addEventListener('sw-cached-site.js', function() {
-    navigator.serviceWorker.register('service-worker.js', {
-      scope: '/',
-    });
-  });
-} 
+
 window.process = { env: { NODE_ENV: 'production' } }
 class App extends Component {
   render() {

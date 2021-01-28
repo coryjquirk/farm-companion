@@ -54,7 +54,8 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "slick-carousel": "^1.8.1",
-    "validator": "^13.5.2"
+    "validator": "^13.5.2",
+    "workbox-precaching": "^6.0.2"
   },
   "engines": {
     "node": "12.18.3"
