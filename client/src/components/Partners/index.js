@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "../Grid";
+import {Container } from "../Grid";
 import "./style.css";
 import PartnerLogos from "./partners.PNG";
 

@@ -2,13 +2,14 @@
 #farmNav {
   float: left;
   width: 180px;
-  height: 450px;
+  height: 500px;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 1;
   font-family: Futura,Trebuchet MS,Arial,sans-serif; 
   font-weight: bold;
+  font-size: large;
 }
 .navbar li {
   background-color: #f8f9fa;

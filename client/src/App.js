@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 //router
 //managing state based on login status
-import store from "./store";
-import setAuthToken from "./utils/setAuthToken";
-import jwt_decode from "jwt-decode";
-import { setCurrentUser, logoutUser } from "./actions/authActions";
+// import store from "./store";
+// import setAuthToken from "./utils/setAuthToken";
+// import jwt_decode from "jwt-decode";
+// import { setCurrentUser, logoutUser } from "./actions/authActions";
 //pages
 import Home from "./pages/HomePage";
 import InventoryLaunch from "./pages/InventoryLaunch";
@@ -48,7 +48,15 @@ import ScrollArrow from "./components/ScrollArrow";
 //     window.location.href = "./login";
 //   }
 // }
-
+// Check that service workers are supported
+if ('serviceWorker' in navigator) {
+  window.addEventListener('sw-cached-site.js', function() {
+    navigator.serviceWorker.register('service-worker.js', {
+      scope: '/',
+    });
+  });
+} 
+window.process = { env: { NODE_ENV: 'production' } }
 class App extends Component {
   render() {
     return (

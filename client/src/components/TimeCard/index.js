@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "./style.css";
 import "reactjs-popup/dist/index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,9 +16,6 @@ function currentTime() {
   hour = updateTime(hour);
   min = updateTime(min);
   sec = updateTime(sec);
-  var t = setTimeout(function () {
-    currentTime();
-  }, 1000); /* setting timer */
   return hour + " : " + min + " : " + sec;
 }
 function updateTime(k) {
@@ -77,7 +74,7 @@ function TimeCard() {
     setIsOpen(false);
   }
   return (
-    <div class="mapouter">
+    <div className="mapouter">
       <h1 id="title">Time Sheet</h1>
       <p>Time: {currentTime()}</p>
       <p>Today: {getCurrentDate()} </p>

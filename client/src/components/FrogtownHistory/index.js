@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "../Grid";
+import { Container } from "../Grid";
 import "./style.css";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

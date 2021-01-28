@@ -6,7 +6,6 @@ import "reactjs-popup/dist/index.css";
 
 //mad table tips from here: https://dev.to/abdulbasit313/an-easy-way-to-create-a-customize-dynamic-table-in-react-js-3igg
 
-
 class WeekSheet extends Component {
   constructor(props) {
     super(props); //since we are extending class Table so we have to use super in order to override Component class constructor
@@ -14,30 +13,55 @@ class WeekSheet extends Component {
       //state is by default an object
       students: [
         {
+          id: "1",
           day: "Sunday",
           date: "1/24",
           timein: "12:00p.m.",
           timeout: "2:00p.m.",
-          notes: "Equipment Inventory",
+          notes: "Equipment/seed Inventory",
         },
         {
+          id: "2",
           day: "Monday",
           date: "1/25",
           timein: "2:00p.m.",
           timeout: "5:00p.m.",
           notes: "Cleaned up hoop house, fixed door",
         },
-        { day: "Tuesday", date: "1/26", timein: "", timeout: "", notes: "" },
         {
+          id: "3",
+          day: "Tuesday",
+          date: "1/26",
+          timein: "",
+          timeout: "",
+          notes: "",
+        },
+        {
+          id: "4",
           day: "Wednesday",
           date: "1/27",
           timein: "9:00a.m.",
           timeout: "4:00p.m.",
           notes: "Planting",
         },
-        { day: "Thursday", date: "1/28", timein: "", timeout: "", notes: "" },
-        { day: "Friday", date: "1/29", timein: "", timeout: "", notes: "" },
         {
+          id: "5",
+          day: "Thursday",
+          date: "1/28",
+          timein: "",
+          timeout: "",
+          notes: "",
+        },
+        {
+          id: "6",
+          day: "Friday",
+          date: "1/29",
+          timein: "",
+          timeout: "",
+          notes: "",
+        },
+        {
+          id: "7",
           day: "Saturday",
           date: "1/30",
           timein: "10:00a.m.",
@@ -49,9 +73,10 @@ class WeekSheet extends Component {
   }
   renderTableData() {
     return this.state.students.map((student, index) => {
-      const { id, day, date, timein, timeout, notes } = student; //destructuring
+      const {day, date, timein, timeout, notes, id } = student; //destructuring
       return (
         <tr key={id}>
+          <td>{id}</td>
           <td>{day}</td>
           <td>{date}</td>
           <td>{timein}</td>
@@ -69,21 +94,32 @@ class WeekSheet extends Component {
   }
   render() {
     return (
-        <div>
-            <p><Popup trigger={<button class="timeClockBtn btn btn-primary">Check In</button>} position="right center">
-              <div className="my-popup">Checked in!</div>
-            </Popup>
-            <Popup trigger={<button class="timeClockBtn btn btn-primary">Check Out</button>} position="right center">
-              <div className="my-popup">Checked Out!</div>
-            </Popup>
-          </p>
-          <table id="timeTable">
-            <tbody>
-              <tr>{this.renderTableHeader()}</tr>
-              {this.renderTableData()}
-            </tbody>
-          </table>
-        </div>
+      <div>
+        <p>
+          <Popup
+            trigger={
+              <button className="timeClockBtn btn btn-primary">Check In</button>
+            }
+            position="right center"
+          >
+            <div className="my-popup">Checked in!</div>
+          </Popup>
+          <Popup
+            trigger={
+              <button className="timeClockBtn btn btn-primary">Check Out</button>
+            }
+            position="right center"
+          >
+            <div className="my-popup">Checked Out!</div>
+          </Popup>
+        </p>
+        <table id="timeTable">
+          <tbody>
+            <tr>{this.renderTableHeader()}</tr>
+            {this.renderTableData()}
+          </tbody>
+        </table>
+      </div>
     );
   }
 }

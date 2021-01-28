@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "../components/Grid";
+import {Container } from "../components/Grid";
 import GeneralInventory from "../components/GeneralInventory"
 
 const InventoryPage = () => {

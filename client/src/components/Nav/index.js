@@ -7,7 +7,7 @@ import "reactjs-popup/dist/index.css";
 
 function Nav() {
   return (
-    <nav id="farmNav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="farmNav" className="navbar navbar-expand-lg navbar-light bg-light">
       <button
         className="navbar-toggler"
         type="button"
@@ -22,9 +22,9 @@ function Nav() {
       <a href="/">
         <img id="mobileLogo" src={FrogtownLogo} alt="frogtown farm logo" />
       </a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbarList" id="navbar-nav">
-          <li class="nav-link">
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbarList" id="navbar-nav">
+          <li className="nav-link">
             <a href="/">
               <img
                 id="desktopLogo"
@@ -33,49 +33,49 @@ function Nav() {
               />
             </a>
           </li>
-          <li class="mainNav nav-item">
-            <a class="nav-link" href="/home">
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/home">
               HOME
             </a>
           </li>
-          <li class="mainNav nav-item">
-            <a class="nav-link" href="/inventoryhome">
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/inventoryhome">
               INVENTORY
             </a>
           </li>
-          <li class="mainNav nav-item">
-            <a class="nav-link" href="/timecard">
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/timecard">
               TIME CLOCK
             </a>
           </li>
-          <li class="mainNav nav-item">
-            <a class="nav-link" href="/handbook">
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/handbook">
               HANDBOOK
             </a>
           </li>
-          <li class="mainNav nav-item">
-            <a class="nav-link" href="/directoryhome">
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/directoryhome">
               DIRECTORY
             </a>
           </li>
-          <li class="mainNav nav-item">
-            <a class="nav-link" href="/documents">
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/documents">
               DOCUMENTS
             </a>
           </li>
-          <li class="mainNav nav-item">
-            <a class="nav-link" href="/farmmap">
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/farmmap">
               MAP
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/options">
+          <li className="nav-item">
+            <a className="nav-link" href="/options">
               OPTIONS
             </a>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <Popup
-              trigger={<span class="nav-link">SIGN OUT</span>}
+              trigger={<span className="nav-link">SIGN OUT</span>}
               position="right center"
             >
               <div className="my-popup">Authentication coming soon!</div>

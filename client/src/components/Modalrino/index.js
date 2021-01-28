@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faWindowClose, faStopwatch } from "@fortawesome/free-solid-svg-icons";
@@ -12,9 +12,6 @@ const modalStyle = {
 };
 function Modalrino() {
   const [modalIsOpen, setIsOpen] = useState(false);
-  function openModal() {
-    setIsOpen(true);
-  }
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
   }

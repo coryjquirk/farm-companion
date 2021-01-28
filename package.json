@@ -49,6 +49,7 @@
     "react-scripts": "^4.0.1",
     "react-slick": "^0.27.13",
     "react-toast-notifications": "^2.4.0",
+    "react-transition-group": "^4.4.1",
     "reactjs-popup": "^2.0.4",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",

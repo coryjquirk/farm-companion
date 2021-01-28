@@ -2,6 +2,9 @@
   width: 100%;
   height: 800px;
 }
+#hideColumn{
+  display: none;
+}
 #title {
   text-align: center;
 }

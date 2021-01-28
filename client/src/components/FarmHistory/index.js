@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "../Grid";
+import {Container } from "../Grid";
 import "./style.css";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -55,7 +55,7 @@ const FarmHistory = () => {
               height="491"
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=941%20Lafond%20Ave,%20St%20Paul,%20MN%2055104&t=&z=17&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0"
