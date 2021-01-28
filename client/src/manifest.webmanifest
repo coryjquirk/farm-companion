@@ -1,0 +1,30 @@
+{
+    "name": "Frogtown Farm Admin Site",
+    "short_name": "Frogtown Farm",
+    "icons": [
+        {
+          "src": "../public/logo16.png",
+          "sizes": "16x16",
+          "type": "image/png"
+        },
+        {
+          "src": "../public/logo32.png",
+          "sizes": "32x32",
+          "type": "image/png"
+        },
+        {
+          "src": "../public/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "../public/logo512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+      "start_url": "/",
+      "background_color": "#ffffff",
+      "display": "standalone",
+      "theme_color": "#ffffff"
+}
