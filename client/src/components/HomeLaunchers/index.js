@@ -16,7 +16,7 @@ function HomeLaunchers() {
       <a href="/inventoryhome">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Inventory</span>
+            <span>Farm Inventory</span>
           </h3>
         </div>
       </a>
@@ -37,28 +37,28 @@ function HomeLaunchers() {
       <a href="/directoryhome">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Directory</span>
+            <span>Staff Directory</span>
           </h3>
         </div>
       </a>
       <a href="/documents">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Documents</span>
+            <span>Employee Documents</span>
           </h3>
         </div>
       </a>
       <a href="/farmmap">
         <div class="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Map</span>
+            <span>Farm Map</span>
           </h3>
         </div>
       </a>
       <a href="/options">
         <div class="homeLauncher" style={cardStyle}>
           <h3 class="text-muted">
-            <span>Options <FontAwesomeIcon
+            <span>Options{" "}<FontAwesomeIcon
                 id="goinHome"
                 icon={faCog}
                 class="fas fa-home"
@@ -69,7 +69,7 @@ function HomeLaunchers() {
       <a href="/dashboard">
         <div class="homeLauncher" style={cardStyle}>
           <h3 class="text-muted">
-            <span>Sign out</span>
+            <span>Sign Out</span>
           </h3>
         </div>
       </a>
