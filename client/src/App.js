@@ -7,7 +7,6 @@ import store from "./store";
 import setAuthToken from "./utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
-import { StoreProvider } from "./utils/GlobalState";
 //pages
 import Home from "./pages/HomePage";
 import InventoryLaunch from "./pages/InventoryLaunch";
@@ -51,7 +50,6 @@ if (localStorage.jwtToken) {
 class App extends Component {
   render() {
     return (
-      <StoreProvider>
       <Router>
         <Nav />
         <Header />
@@ -78,7 +76,6 @@ class App extends Component {
         </div>
         <ScrollArrow/>
       </Router>
-      </StoreProvider>
     );
   }
 }
