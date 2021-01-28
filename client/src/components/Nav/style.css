@@ -1,4 +1,4 @@
-#farmNav {
+#navbarNav {
   float: left;
   width: 180px;
   height: 450px;
@@ -7,54 +7,57 @@
   top: 0;
   z-index: 1;
 }
+#farmNav {
+  float: left;
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
 .navbar li {
   background-color: #f8f9fa;
 }
-#desktopLogo{
-    height: 115px;
-    width: 115px;
+#desktopLogo {
+  height: 115px;
+  width: 115px;
 }
 #desktopLogo:hover {
   opacity: 0.5;
 }
-#mobileLogo{
-  display:none;
+#mobileLogo {
+  display: none;
   height: 75px;
-    width: 75px;
-}
-.nav-link{
-  color: rgb(136, 136, 136);
-  padding: 6px 5px 6px 5px;
-
+  width: 75px;
 }
 .navbar ul {
-    padding-inline-start: 0px;
+  padding-inline-start: 0px;
 }
-.mainNav a{
-  color:black;
+.mainNav a {
+  color: black;
 }
-.mainNav a:hover{
-  color:#1f813f;
+.mainNav a:hover {
+  color: #1f813f;
 }
 #navbar-nav li {
   color: rgb(191, 194, 209);
   list-style: none;
 }
-.navbar-nav .navLink {
-  padding-right: 0;
-  padding-left: 0;
+.nav-link {
+  color: rgb(136, 136, 136);
+  padding: 5px 5px 6px 20px;
 }
 @media only screen and (max-width: 992px) {
   #farmNav {
-  float: none;
-  width: 100%;
-  height: auto;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  #desktopLogo {
+    display: none;
+  }
+  #mobileLogo {
+    display: block;
+  }
 }
-#desktopLogo{
-  display:none;
-}
-#mobileLogo{
-  display:block;
-}
-}
-

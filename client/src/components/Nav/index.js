@@ -24,7 +24,7 @@ function Nav() {
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbarList" id="navbar-nav">
-          <li>
+          <li class="nav-link">
             <a href="/home">
               <img
                 id="desktopLogo"
