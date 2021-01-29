@@ -51,7 +51,7 @@
 
 #facadeHero {
   height: 800px;
-  width: 1100px;
+  width: 100%;
   background-position: center;
   background-image: url(https://images.unsplash.com/12/green.jpg?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80);
   background-repeat: no-repeat;
@@ -61,7 +61,7 @@ input {
   margin: 5px;
 }
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
   #facadeHero {
     width: 992px;
   }
@@ -76,4 +76,4 @@ input {
     width: 360px;
     height: 700px;
   }
-}
+} */

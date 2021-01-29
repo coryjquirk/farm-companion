@@ -98,19 +98,19 @@ class WeekSheet extends Component {
         <p>
           <Popup
             trigger={
-              <button className="timeClockBtn btn btn-primary">Check In</button>
+              <button className="timeClockBtn btn btn-primary">Clock In</button>
             }
             position="right center"
           >
-            <div className="my-popup">Checked in!</div>
+            <div className="my-popup">Clocked in!</div>
           </Popup>
           <Popup
             trigger={
-              <button className="timeClockBtn btn btn-primary">Check Out</button>
+              <button className="timeClockBtn btn btn-primary">Clock Out</button>
             }
             position="right center"
           >
-            <div className="my-popup">Checked Out!</div>
+            <div className="my-popup">Clocked out!</div>
           </Popup>
         </p>
         <table id="timeTable">
