@@ -59,7 +59,7 @@ function Nav() {
             </a>
           </li>
           <li className="mainNav nav-item">
-            <a className="nav-link" href="/documents">
+            <a className="nav-link" href="/documenthome">
               DOCUMENTS
             </a>
           </li>

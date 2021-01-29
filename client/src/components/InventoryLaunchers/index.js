@@ -15,33 +15,33 @@ function InventoryLaunchers() {
   return (
     <div>
       <a href="/seedinventory">
-        <div class="homeLauncher" style={cardStyle}>
+        <div className="homeLauncher" style={cardStyle}>
           <h3>
             <span>Seed Inventory</span>
           </h3>
         </div>
       </a>
       <a href="/generalinventory">
-        <div class="homeLauncher" style={cardStyle}>
+        <div className="homeLauncher" style={cardStyle}>
           <h3>
             <span>General Inventory</span>
           </h3>
         </div>
       </a>
-      <a href="/">
-        <div class="homeLauncher" style={cardStyle}>
-          <h3 class="text-muted">
+      <a href="/home">
+        <div className="homeLauncher" style={cardStyle}>
+          <h3 className="text-muted">
             <span>
               <FontAwesomeIcon
                 id="goinHome"
                 icon={faArrowLeft}
-                class="fas fa-home"
+                className="fas fa-home"
               />{" "}
               Home{" "}
               <FontAwesomeIcon
                 id="goinHome"
                 icon={faHome}
-                class="fas fa-home"
+                className="fas fa-home"
               />
             </span>
           </h3>

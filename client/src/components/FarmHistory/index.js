@@ -41,14 +41,14 @@ const FarmHistory = () => {
             <FontAwesomeIcon
               id="goinHome"
               icon={faArrowLeft}
-              class="fas fa-book"
+              className="fas fa-book"
             />{" "}
             Back to Employee Handbook{" "}
-            <FontAwesomeIcon id="goinHome" icon={faBook} class="fas fa-book" />
+            <FontAwesomeIcon id="goinHome" icon={faBook} className="fas fa-book" />
           </a>
         </p>
-        <div class="mapouter">
-          <div class="gmap_canvas">
+        <div className="mapouter">
+          <div className="gmap_canvas">
             <iframe
               title="farm map"
               width="646"

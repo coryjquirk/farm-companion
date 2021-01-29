@@ -11,6 +11,7 @@ import "./App.css";
 import Home from "./pages/HomePage";
 import InventoryLaunch from "./pages/InventoryLaunch";
 import DirectoryLaunch from "./pages/DirectoryLaunch";
+import DocumentLaunch from "./components/DocumentLaunch";
 import SeedInventoryPage from "./pages/SeedInventoryPage";
 import GeneralInventoryPage from "./pages/GeneralInventoryPage";
 import TimeCard from "./components/TimeCard";
@@ -67,6 +68,7 @@ class App extends Component {
             <Route path="/handbook" component={Handbook} />
             <Route exact path="/inventoryhome" component={InventoryLaunch} />
             <Route exact path="/directoryhome" component={DirectoryLaunch} />
+            <Route exact path="/documenthome" component={DocumentLaunch} />
             <Route exact path="/Partners" component={Partners} />
             <Route exact path="/seedinventory" component={SeedInventoryPage} />
             <Route exact path="/timecard" component={TimeCard} />

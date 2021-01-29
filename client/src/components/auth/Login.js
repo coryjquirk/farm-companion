@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 import Register from "./Register";
 
 function Login() {
-  const [registerMode, openRegisterSection] = useState(false);
-  const [justLogin, closeRegisterSection] = useState(true);
-  function openRegister() {
-    openRegisterSection(true);
-    closeRegisterSection(false);
-  }
   return (
     <div id="facadeHero">
       <div className="container" id="loginCard">

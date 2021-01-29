@@ -11,7 +11,7 @@ const Home = () => {
         Home{" "}
         
         <span>
-          <FontAwesomeIcon height="20px" icon={faHome} class="fas fa-home" />
+          <FontAwesomeIcon height="20px" icon={faHome} className="fas fa-home" />
         </span>
       </h3>
       <HomeLaunchers />

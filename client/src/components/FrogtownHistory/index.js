@@ -13,19 +13,19 @@ const FrogtownHistory = () => {
       <div id="fader">
         <h1>Frogtown History</h1>
         <a href="http://www.frogtownmn.org" target="_blank" rel="noreferrer">
-          <div class="homeLauncher" id="historyLinks">
+          <div className="homeLauncher" id="historyLinks">
             <p>
               Frogtown Neighborhood Association page{" "}
               <FontAwesomeIcon
                 id="goinHome"
                 icon={faLink}
-                class="fas fa-book"
+                className="fas fa-book"
                 href="/handbook"
               />
             </p>
           </div>{" "}
         </a>
-        <div class="homeLauncher" id="historyLinks">
+        <div className="homeLauncher" id="historyLinks">
           <p>Saint Paul Historical Society </p>
           <ul>
             <li>
@@ -38,7 +38,7 @@ const FrogtownHistory = () => {
                 <FontAwesomeIcon
                   id="goinHome"
                   icon={faLink}
-                  class="fas fa-book"
+                  className="fas fa-book"
                   href="/handbook"
                 />
               </a>
@@ -53,7 +53,7 @@ const FrogtownHistory = () => {
                 <FontAwesomeIcon
                   id="goinHome"
                   icon={faLink}
-                  class="fas fa-book"
+                  className="fas fa-book"
                   href="/handbook"
                 />
               </a>
@@ -65,14 +65,14 @@ const FrogtownHistory = () => {
             <FontAwesomeIcon
               id="goinHome"
               icon={faArrowLeft}
-              class="fas fa-book"
+              className="fas fa-book"
               href="/handbook"
             />{" "}
             Back to Employee Handbook{" "}
             <FontAwesomeIcon
               id="goinHome"
               icon={faBook}
-              class="fas fa-book"
+              className="fas fa-book"
               href="/handbook"
             />
           </a>

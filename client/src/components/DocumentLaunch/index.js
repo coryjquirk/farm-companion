@@ -3,76 +3,76 @@ import "./style.css";
 import Texture from "./45-degree-fabric-light.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faArrowLeft, faFile } from "@fortawesome/free-solid-svg-icons";
 
 const cardStyle = {
   backgroundImage: `url(${Texture})`,
   maxWidth: "400px",
 };
 
-function Handbook() {
+function DocumentLaunch() {
   return (
     <div>
-      <a href="/frogtownhistory">
+      <a href="/payrolldocuments">
         <div className="homeLauncher" style={cardStyle}>
-          <h3> 
-            <FontAwesomeIcon
+          <h3>
+            <span>Payroll{"  "}<FontAwesomeIcon
                 id="goinHome"
-                icon={faBook}
-                className="fas fa-book"
-              />
-              {"  "}  
-            <span>History of Frogtown</span>
+                icon={faFile}
+                className="fas fa-home"
+              /></span>
           </h3>
         </div>
       </a>
-      <a href="/farmhistory">
+      <a href="/importantdocuments">
         <div className="homeLauncher" style={cardStyle}>
-          <h3><FontAwesomeIcon
+          <h3>
+            <span>Important Documents{"  "}<FontAwesomeIcon
                 id="goinHome"
-                icon={faBook}
-                className="fas fa-book"
-              />{"  "}
-            <span>History of the farm</span>
+                icon={faFile}
+                className="fas fa-home"
+              /></span>
           </h3>
         </div>
       </a>
-      <a href="/partners">
+      <a href="/educationalmaterials">
         <div className="homeLauncher" style={cardStyle}>
-          <h3><FontAwesomeIcon
+          <h3>
+            <span>Educational Materials{"  "}<FontAwesomeIcon
                 id="goinHome"
-                icon={faBook}
-                className="fas fa-book"
-              />{"  "}
-            <span>Community partners</span>
+                icon={faFile}
+                className="fas fa-home"
+              /></span>
           </h3>
         </div>
       </a>
-      <a href="/whatwedo">
+      <a href="/farmcertifications">
         <div className="homeLauncher" style={cardStyle}>
-          <h3><FontAwesomeIcon
+          <h3>
+            <span>Farm Certifications{"  "}<FontAwesomeIcon
                 id="goinHome"
-                icon={faBook}
-                className="fas fa-book"
-              />{"  "}
-            <span>What we do</span>
+                icon={faFile}
+                className="fas fa-home"
+              /></span>
           </h3>
         </div>
       </a>
       <a href="/home">
         <div className="homeLauncher" style={cardStyle}>
           <h3 className="text-muted">
-            <span><FontAwesomeIcon
+            <span>
+              <FontAwesomeIcon
                 id="goinHome"
                 icon={faArrowLeft}
                 className="fas fa-home"
-              /> Home <FontAwesomeIcon
+              />{" "}
+              Home{" "}
+              <FontAwesomeIcon
                 id="goinHome"
                 icon={faHome}
                 className="fas fa-home"
-              /></span>
+              />
+            </span>
           </h3>
         </div>
       </a>
@@ -80,4 +80,4 @@ function Handbook() {
   );
 }
 
-export default Handbook;
+export default DocumentLaunch;

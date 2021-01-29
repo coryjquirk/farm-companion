@@ -31,16 +31,16 @@ function Modalrino() {
           <FontAwesomeIcon icon={faWindowClose} id="close window" />
         </button>
         <WeekSheet/>
-        <button onClick={closeModal()} id="goinHomeBtn" type="button" class="btn btn-success">
+        <button onClick={closeModal()} id="goinHomeBtn" type="button" className="btn btn-success">
             <FontAwesomeIcon
                 id="goinHome"
                 icon={faArrowLeft}
-                class="fas fa-home"
+                className="fas fa-home"
               />{" "}Back to time clock{" "}
               <FontAwesomeIcon
                 id="goinHome"
                 icon={faStopwatch}
-                class="fas fa-home"
+                className="fas fa-home"
               />
           </button>
     </Modal>

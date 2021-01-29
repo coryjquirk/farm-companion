@@ -8,7 +8,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 function FarmMap() {
   return (
-    <div class="mapouter">
+    <div className="mapouter">
       <p>
         Farm office:{" "}
         <a
@@ -19,7 +19,7 @@ function FarmMap() {
           <FontAwesomeIcon
               id="goinHome"
               icon={faLink}
-              class="fas fa-home"
+              className="fas fa-home"
             />{" "}941 Lafond Ave, St Paul, MN 55104
         </a>{" "}(Google Maps link)
       </p>
@@ -33,11 +33,11 @@ function FarmMap() {
           <FontAwesomeIcon
               id="goinHome"
               icon={faLink}
-              class="fas fa-home"
+              className="fas fa-home"
             />{" "}946 Minnehaha Ave W St Paul, MN 55104
         </a>{" "}(Google Maps link)
       </p>
-      <div class="gmap_canvas">
+      <div className="gmap_canvas">
         <iframe
           title="farm map"
           width="646"
@@ -51,15 +51,15 @@ function FarmMap() {
         ></iframe>
       </div>
       <a href="/home">
-        <button id="goinHomeBtn" type="button" class="btn btn-success">
+        <button id="goinHomeBtn" type="button" className="btn btn-success">
           <span>
             <FontAwesomeIcon
               id="goinHome"
               icon={faArrowLeft}
-              class="fas fa-home"
+              className="fas fa-home"
             />{" "}
             Return home{" "}
-            <FontAwesomeIcon id="goinHome" icon={faHome} class="fas fa-home" />
+            <FontAwesomeIcon id="goinHome" icon={faHome} className="fas fa-home" />
           </span>
         </button>
       </a>
