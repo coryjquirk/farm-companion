@@ -7,7 +7,7 @@ function Login() {
     <div id="facadeHero">
       <div className="container" id="loginCard">
         <h1>Frogtown Farm</h1>
-        <p>St. Paul, Minnesota</p>
+        <p id="StPaul">St. Paul, Minnesota</p>
         <div className="row">
             <div className="col s8 offset-s2">
               <div className="input-field col s12">
@@ -25,7 +25,6 @@ function Login() {
                     style={{
                       width: "150px",
                       borderRadius: "3px",
-                      letterSpacing: "1.5px",
                       marginTop: "1rem",
                     }}
                   >

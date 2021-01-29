@@ -22,7 +22,11 @@ function Register() {
       {justLogin === true && (
         <div className="input-field col s12">
           <p id="registerFormP">Don't have an account yet?</p>
-          <button  id="registerToggleBtn" className="btn btn-success" onClick={openRegister}>
+          <button
+            id="registerToggleBtn"
+            className="btn btn-success"
+            onClick={openRegister}
+          >
             <span>Register</span>
           </button>
         </div>
@@ -30,7 +34,11 @@ function Register() {
       {registerMode === true && (
         <div className="input-field col s12">
           <hr></hr>
-          <button id="registerToggleBtn" onClick={closeRegister} className="btn btn-success">
+          <button
+            id="registerToggleBtn"
+            onClick={closeRegister}
+            className="btn btn-success"
+          >
             <span>
               <FontAwesomeIcon
                 id="goinHome"
@@ -64,18 +72,14 @@ function Register() {
             />
             <span className="red-text"></span>
           </div>
-          <div
-            id="registerBtns"
-            className="col s12"
-            style={{ paddingLeft: "11.250px" }}
-          >
+          <div className="col s12" style={{ paddingLeft: "11.250px" }}>
             <a id="registerFormP" href="/home">
-              <button id="registerBtns"
+              <button
+                id="registerBtns"
                 className="btn btn-success"
                 style={{
                   width: "150px",
                   borderRadius: "3px",
-                  letterSpacing: "1.5px",
                   marginTop: "1rem",
                 }}
               >
@@ -85,24 +89,17 @@ function Register() {
             <p id="registerFormP" className="grey-text text-darken-1">
               Forgot:{"  "}
               <Popup
-                trigger={
-                  <button className="btn btn-success">
-                    email
-                  </button>
-                }
+                trigger={<button className="btn btn-success">email</button>}
                 position="right center"
               >
                 {" "}
                 <div className="my-popup">
-                Website still under construction! Thanks for visiting
+                  Website still under construction! Thanks for visiting
                 </div>
               </Popup>
-              {"  "}/{" "}<Popup
-                trigger={
-                  <button className="btn btn-success">
-                    password
-                  </button>
-                }
+              {"  "}/{" "}
+              <Popup
+                trigger={<button className="btn btn-success">password</button>}
                 position="right center"
               >
                 {" "}

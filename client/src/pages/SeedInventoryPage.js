@@ -5,16 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const InventoryPage = () => {
-  return (<div>
-            <h3>Seed inventory</h3>
+  return (
+    <div>
+      <h3>Seed inventory</h3>
       <a href="/inventoryhome">
-        <button class="btn btn-success">
+        <button id="backBtn" class="btn btn-success">
           {" "}
           <FontAwesomeIcon icon={faArrowLeft} id="close window" />
         </button>
       </a>
       <SeedInventory></SeedInventory>
-      </div>
+    </div>
   );
 };
 

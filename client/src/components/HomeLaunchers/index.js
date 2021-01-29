@@ -23,7 +23,7 @@ function HomeLaunchers() {
       <a href="/timecard">
         <div className="homeLauncher" style={cardStyle}>
           <h3>
-            <span>Time Card</span>
+            <span>Time Clock</span>
           </h3>
         </div>
       </a>

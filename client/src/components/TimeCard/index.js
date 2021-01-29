@@ -4,6 +4,8 @@ import "reactjs-popup/dist/index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import WeekSheet from "./WeekSheet";
+import Stopwatch from "./Stopwatch/Stopwatch.jsx"
+//this Modalrino dependency needs to stay to keep Modal working. idk why
 import Modalrino from "../Modalrino";
 import Modal from "react-modal";
 Modal.setAppElement("#root");
@@ -74,11 +76,13 @@ function TimeCard() {
     setIsOpen(false);
   }
   return (
-    <div className="mapouter">
-      <h1 id="title">Time Sheet</h1>
-      <p>Time: {currentTime()}</p>
-      <p>Today: {getCurrentDate()} </p>
-      <div></div>
+    <div className="stopWatch">
+      <h1 id="title">Time Clock</h1>
+      <p>TODAY: {getCurrentDate()} </p>
+      <p>CURRENT TIME: {currentTime()}</p>
+      <div>
+        <Stopwatch/>
+      </div>
       <button id="cartBtn" onClick={openModal} className="btn btn-primary">
         View Week
       </button>

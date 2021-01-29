@@ -1,0 +1,36 @@
+.stopWatch p {
+  float: right;
+  clear: both;
+  margin: 0px 0px 0px 0px;
+}
+#stopwatchNumber {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#stopwatchHistory,
+.stopWatch p,
+.stopWatch button,
+.timeClockBtn {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+.meStopwatchBtn {
+  margin: 5px 30px 10px 15px;
+}
+#lightGrey {
+  background-color: #f8f9fa;
+  background-image: url("geometric-leaves.png");
+  height: 300px;
+}
+@media screen and (max-width: 395px) {
+  #startResetStop {
+    margin: 60px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 255px) {
+    #startResetStop {
+      margin: 60px 0px 0px 30px;
+    }
+  }

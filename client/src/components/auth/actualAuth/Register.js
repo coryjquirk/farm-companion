@@ -124,7 +124,6 @@ class Register extends Component {
                   style={{
                     width: "150px",
                     borderRadius: "3px",
-                    letterSpacing: "1.5px",
                     marginTop: "1rem",
                   }}
                   type="submit"
