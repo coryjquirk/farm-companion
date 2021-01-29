@@ -1,10 +1,10 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import "./style.css";
 import "reactjs-popup/dist/index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import WeekSheet from "./WeekSheet";
-import Stopwatch from "./Stopwatch/Stopwatch.jsx"
+import Stopwatch from "./Stopwatch/Stopwatch.jsx";
 //this Modalrino dependency needs to stay to keep Modal working. idk why
 import Modalrino from "../Modalrino";
 import Modal from "react-modal";
@@ -80,12 +80,15 @@ function TimeCard() {
       <h1 id="title">Time Clock</h1>
       <p>TODAY: {getCurrentDate()} </p>
       <p>CURRENT TIME: {currentTime()}</p>
+
       <div>
-        <Stopwatch/>
+        <Stopwatch />
       </div>
-      <button id="cartBtn" onClick={openModal} className="btn btn-primary">
-        View Week
-      </button>
+      <p>
+        <button id="viewWeek" onClick={openModal} className="btn btn-primary">
+          View Week
+        </button>
+      </p>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
