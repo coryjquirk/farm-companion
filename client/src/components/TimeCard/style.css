@@ -25,6 +25,12 @@
   font-weight: bold;
   font-size: medium;
 }
+#shiftNotes{
+  height: 200px;
+  width:200px;
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 10px;
+}
 .meStopwatchBtn {
   margin: 5px 30px 10px 15px;
 }

@@ -72,19 +72,32 @@ class Stopwatch extends React.Component {
       <div className={'stopwatch'}>
         <p>{this.state.curTime}</p>
         <div id="lightGrey">
-        <p id="stopwatchNumber" className="fader">
-        <StopwatchDisplay
-          ref="display"
-          {...this.state}
-          formatTime={this.formatTime}
-        /></p>
-        {this.state.running === false && (
-          <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.start}>START</button>
-        )}
-        {this.state.running === true && (
-          <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.stop}>STOP</button>
-        )}
-        <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.reset}>RESET</button>
+          <p id="stopwatchNumber" className="fader">
+            <StopwatchDisplay
+              ref="display"
+              {...this.state}
+              formatTime={this.formatTime}
+            /></p>
+          {this.state.running === false && (
+            <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.start}>CLOCK IN</button>
+          )}
+          {this.state.running === true && (
+            <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.stop}>CLOCK OUT</button>
+          )}
+          <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.reset}>RESET</button>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textarea">shift notes</label>
+            <div class="col-md-4">
+              <textarea class="form-control" id="textarea" name="textarea">...</textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="filebutton">add files</label>
+            <div class="col-md-4">
+              <input id="filebutton" name="filebutton" class="input-file" type="file" />
+            </div>
+          </div>
         </div>
         <hr></hr>
         <StopwatchHistory {...this.state} formatTime={this.formatTime} />

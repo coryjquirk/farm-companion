@@ -66,13 +66,13 @@ class StopwatchHistory extends React.Component {
   render() {
     return (
       <div className={'stopwatch__history'}>
-        <button class="btn btn-secondary meStopwatchBtn" onClick={this.saveTime}>SAVE TIME</button>
+        <button class="btn btn-secondary meStopwatchBtn" onClick={this.saveTime}>SAVE SHIFT NOTES</button>
         <button class="btn btn-secondary meStopwatchBtn" onClick={this.resetHistory}>RESET HISTORY</button>
         <h3>History</h3>
         <ul>
           {this.state.history.map((item, index) => <li id="stopwatchHistory" key={index}>{item}</li>)}
         </ul>
-        <button class="btn btn-secondary meStopwatchBtn" onClick={this.saveSheet}>EXPORT HISTORY TO DOCUMENTS</button>
+        <a href="/documenthome"><button class="btn btn-secondary meStopwatchBtn">EMPLOYEE DOCUMENTS</button></a>
       </div>
     );
   }

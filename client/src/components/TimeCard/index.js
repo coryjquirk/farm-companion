@@ -61,11 +61,18 @@ function getCurrentDate(separator = " ") {
 
   return `${
     weekday + ","
-  }${separator}${realMonth}${separator}${date}${separator}${year}`;
+    }${separator}${realMonth}${separator}${date}${separator}${year}`;
 }
 
 function TimeCard() {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [userClockedIn, clockedIn] = useState();
+  function clockIn() {
+    clockedIn(true);
+  }
+  function clockOut() {
+    clockedIn(false);
+  }
   function openModal() {
     setIsOpen(true);
   }
@@ -80,6 +87,8 @@ function TimeCard() {
       <h1 id="title">Time Clock</h1>
 
       <div>
+        {userClockedIn === true && (<p>CLOCKED IN</p>
+        )}
         <Stopwatch />
       </div>
       <p>
