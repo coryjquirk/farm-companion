@@ -94,7 +94,7 @@ class Stopwatch extends React.Component {
 
           <div class="form-group">
             <label class="col-md-4 control-label" for="filebutton">add files</label>
-            <div class="col-md-4">
+            <div  id="fileBtn" class="col-md-4">
               <input id="filebutton" name="filebutton" class="input-file" type="file" />
             </div>
           </div>
