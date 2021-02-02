@@ -78,8 +78,6 @@ function TimeCard() {
   return (
     <div className="stopWatch">
       <h1 id="title">Time Clock</h1>
-      <p>TODAY: {getCurrentDate()} </p>
-      <p>CURRENT TIME: {currentTime()}</p>
 
       <div>
         <Stopwatch />

@@ -14,7 +14,16 @@ class Stopwatch extends React.Component {
       currentTimeMin: 0,
     };
   }
-
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        curTime: new Date().toLocaleString()
+      })
+    }, 1000)
+  }
+  state = {
+    curTime: null,
+  }
   formatTime = (val, ...rest) => {
     let value = val.toString();
     if (value.length < 2) {
@@ -61,6 +70,7 @@ class Stopwatch extends React.Component {
   render() {
     return (
       <div className={'stopwatch'}>
+        <p>{this.state.curTime}</p>
         <div id="lightGrey">
         <p id="stopwatchNumber" className="fader">
         <StopwatchDisplay
