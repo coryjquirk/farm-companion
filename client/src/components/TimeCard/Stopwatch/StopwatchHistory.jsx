@@ -66,7 +66,7 @@ class StopwatchHistory extends React.Component {
   render() {
     return (
       <div className={'stopwatch__history'}>
-        <button className="btn btn-secondary meStopwatchBtn" onClick={this.saveTime}>SAVE SHIFT NOTES</button>
+        <button className="btn btn-secondary meStopwatchBtn">SAVE SHIFT NOTES</button>
         <button className="btn btn-secondary meStopwatchBtn" onClick={this.resetHistory}>RESET HISTORY</button>
         <h3>History</h3>
         <ul>

@@ -78,7 +78,7 @@ class WeekSheet extends Component {
       return (
         <tr key={id}>
           <td>{id}</td>
-          <td>{day}</td>
+          <td>{this.props.day}</td>
           <td>{date}</td>
           <td>{timein}</td>
           <td>{timeout}</td>

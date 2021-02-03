@@ -6,6 +6,7 @@ import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import WeekSheet from "./WeekSheet";
 import Stopwatch from "./Stopwatch/Stopwatch.jsx";
 import StopwatchHistory from "./Stopwatch/StopwatchHistory.jsx";
+import Calendar from 'react-calendar'
 //this Modalrino dependency needs to stay to keep Modal working. idk why
 import Modalrino from "../Modalrino";
 import Modal from "react-modal";
@@ -206,6 +207,8 @@ function TimeCard() {
         <p>Today: {getCurrentDate()} </p>
         <WeekSheet />
       </Modal>
+      <h3>Calendar</h3>
+      <Calendar />
     </div>
   );
 }
