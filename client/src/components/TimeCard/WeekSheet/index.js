@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
+import TimeCard from "./index.js";
 // https://react-popup.elazizi.com/
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
@@ -11,7 +12,7 @@ class WeekSheet extends Component {
     super(props); //since we are extending class Table so we have to use super in order to override Component class constructor
     this.state = {
       //state is by default an object
-      students: [
+      tableRows: [
         {
           id: "1",
           day: "Sunday",
@@ -42,7 +43,7 @@ class WeekSheet extends Component {
           date: "1/27",
           timein: "9:00a.m.",
           timeout: "4:00p.m.",
-          notes: "Planting",
+          notes: "Planting seeds",
         },
         {
           id: "5",
@@ -72,8 +73,8 @@ class WeekSheet extends Component {
     };
   }
   renderTableData() {
-    return this.state.students.map((student, index) => {
-      const {day, date, timein, timeout, notes, id } = student; //destructuring
+    return this.state.tableRows.map((student, index) => {
+      const { day, date, timein, timeout, notes, id } = student; //destructuring
       return (
         <tr key={id}>
           <td>{id}</td>
@@ -87,7 +88,7 @@ class WeekSheet extends Component {
     });
   }
   renderTableHeader() {
-    let header = Object.keys(this.state.students[0]);
+    let header = Object.keys(this.state.tableRows[0]);
     return header.map((key, index) => {
       return <th key={index}>{key.toUpperCase()}</th>;
     });
@@ -95,24 +96,6 @@ class WeekSheet extends Component {
   render() {
     return (
       <div>
-        <p>
-          <Popup
-            trigger={
-              <button className="timeClockBtn btn btn-primary">Clock In</button>
-            }
-            position="right center"
-          >
-            <div className="my-popup">Clocked in!</div>
-          </Popup>
-          <Popup
-            trigger={
-              <button className="timeClockBtn btn btn-primary">Clock Out</button>
-            }
-            position="right center"
-          >
-            <div className="my-popup">Clocked out!</div>
-          </Popup>
-        </p>
         <table id="timeTable">
           <tbody>
             <tr>{this.renderTableHeader()}</tr>

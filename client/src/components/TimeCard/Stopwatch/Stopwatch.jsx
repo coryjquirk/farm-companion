@@ -79,16 +79,16 @@ class Stopwatch extends React.Component {
               formatTime={this.formatTime}
             /></p>
           {this.state.running === false && (
-            <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.start}>CLOCK IN</button>
+            <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.start}>START STOPWATCH</button>
           )}
           {this.state.running === true && (
-            <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.stop}>CLOCK OUT</button>
+            <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.stop}>STOP STOPWATCH</button>
           )}
           <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.reset}>RESET</button>
           <div class="form-group">
             <label class="col-md-4 control-label" for="textarea">shift notes</label>
             <div class="col-md-4">
-              <textarea class="form-control" id="textarea" name="textarea">...</textarea>
+              <textarea class="form-control" id="textarea" name="textarea" placeholder="type something..."></textarea>
             </div>
           </div>
 
