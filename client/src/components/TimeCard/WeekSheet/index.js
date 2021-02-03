@@ -4,6 +4,9 @@ import TimeCard from "./index.js";
 // https://react-popup.elazizi.com/
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// https://fontawesome.com/how-to-use/on-the-web/using-with/react
+import { faSave } from "@fortawesome/free-solid-svg-icons";
 
 //mad table tips from here: https://dev.to/abdulbasit313/an-easy-way-to-create-a-customize-dynamic-table-in-react-js-3igg
 
@@ -14,59 +17,59 @@ class WeekSheet extends Component {
       //state is by default an object
       tableRows: [
         {
-          id: "1",
-          day: "Sunday",
+          day: "Sun",
           date: "1/24",
-          timein: "12:00p.m.",
-          timeout: "2:00p.m.",
+          timein: "12.00",
+          timeout: "14.00",
+          total: "2.00",
           notes: "Equipment/seed Inventory",
         },
         {
-          id: "2",
-          day: "Monday",
+          day: "Mon",
           date: "1/25",
-          timein: "2:00p.m.",
-          timeout: "5:00p.m.",
+          timein: "12.00",
+          timeout: "14.00",
+          total: "2.00",
           notes: "Cleaned up hoop house, fixed door",
         },
         {
-          id: "3",
-          day: "Tuesday",
+          day: "Tues",
           date: "1/26",
-          timein: "",
-          timeout: "",
+          timein: "-",
+          timeout: "-",
+          total: "0.00",
           notes: "",
         },
         {
-          id: "4",
-          day: "Wednesday",
+          day: "Wed",
           date: "1/27",
-          timein: "9:00a.m.",
-          timeout: "4:00p.m.",
+          timein: "12.00",
+          timeout: "14.00",
+          total: "0.00",
           notes: "Planting seeds",
         },
         {
-          id: "5",
-          day: "Thursday",
+          day: "Thurs",
           date: "1/28",
-          timein: "",
-          timeout: "",
+          timein: "-",
+          timeout: "-",
+          total: "0.00",
           notes: "",
         },
         {
-          id: "6",
-          day: "Friday",
+          day: "Fri",
           date: "1/29",
-          timein: "",
-          timeout: "",
+          timein: "-",
+          timeout: "-",
+          total: "0.00",
           notes: "",
         },
         {
-          id: "7",
-          day: "Saturday",
+          day: "Sat",
           date: "1/30",
-          timein: "10:00a.m.",
-          timeout: "1:00p.m.",
+          timein: "12.00",
+          timeout: "14.00",
+          total: "2.00",
           notes: "Programming at Farmer's Market",
         },
       ],
@@ -74,23 +77,29 @@ class WeekSheet extends Component {
   }
   renderTableData() {
     return this.state.tableRows.map((student, index) => {
-      const { day, date, timein, timeout, notes, id } = student; //destructuring
+      const { day, date, timein, timeout, total, notes } = student; //destructuring
       return (
-        <tr key={id}>
-          <td>{id}</td>
-          <td>{this.props.day}</td>
+        <tr key={date}>
+          <td id="dayCol">{day}</td>
           <td>{date}</td>
           <td>{timein}</td>
           <td>{timeout}</td>
-          <td>{notes}</td>
+          <td>{total}</td>
+          <td>
+            <input id="weekNotes" placeholder="notes"></input>
+            <button id="noteSaveBtn" class="btn btn-secondary btn-sm">
+              {" "}
+              <FontAwesomeIcon icon={faSave} />
+            </button>
+          </td>
         </tr>
       );
     });
   }
   renderTableHeader() {
     let header = Object.keys(this.state.tableRows[0]);
-    return header.map((key, index) => {
-      return <th key={index}>{key.toUpperCase()}</th>;
+    return header.map((key, date) => {
+      return <th key={date}>{key.toUpperCase()}</th>;
     });
   }
   render() {

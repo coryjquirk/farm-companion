@@ -203,12 +203,22 @@ function TimeCard() {
         <button id="closeModal" className="btn btn-danger" onClick={closeModal}>
           <FontAwesomeIcon icon={faWindowClose} id="close window" />
         </button>
-        <p>Time: {currentTime()}</p>
-        <p>Today: {getCurrentDate()} </p>
+        <p>{currentTime()}</p>
+        <p>{getCurrentDate()} </p>
         <WeekSheet />
       </Modal>
       <h3>Calendar</h3>
       <Calendar />
+
+
+
+
+
+
+
+
+
+      
     </div>
   );
 }
