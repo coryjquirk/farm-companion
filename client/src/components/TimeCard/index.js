@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import WeekSheet from "./WeekSheet";
 import StopwatchHistory from "./Stopwatch/StopwatchHistory.jsx";
-import Calendar from 'react-calendar'
+import Calendar from "react-calendar";
 //this Modalrino dependency needs to stay to keep Modal working. idk why
 import Modalrino from "../Modalrino";
 import Modal from "react-modal";
@@ -123,10 +123,11 @@ function TimeCard() {
         <div className={"stopwatch"}>
           <p>{time}</p>
           <div id="lightGrey">
-            <p id="stopwatchNumber" className="fader">
-              <div className={"stopwatch__display"}>
-                <span>{stopwatchVal}</span>
-              </div>{" "}
+            <p className="fader">
+            {userClockedIn === true && (<p className={"stopwatch__display"}>
+                <span id="stopwatchNumber">{stopwatchVal}</span>
+              </p>
+            )}
             </p>
             {userClockedIn === true && (
               <button
@@ -146,7 +147,6 @@ function TimeCard() {
                 CLOCK IN{" "}
               </button>
             )}
-
             <button
               id="startResetStop"
               className="btn btn-success meStopwatchBtn"
@@ -207,16 +207,6 @@ function TimeCard() {
       </Modal>
       <h3>Calendar</h3>
       <Calendar />
-
-
-
-
-
-
-
-
-
-      
     </div>
   );
 }
