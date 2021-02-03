@@ -1,127 +1,43 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { loginUser } from "../../actions/authActions";
-import classnames from "classnames";
+import React from "react";
 import "./style.css";
+import Register from "./Register";
 
-class Login extends Component {
-  constructor() {
-    super();
-    this.state = {
-      email: "",
-      password: "",
-      errors: {},
-    };
-  }
-
-  componentDidMount() {
-    // If logged in and user navigates to Login page, should redirect them to dashboard
-    if (this.props.auth.isAuthenticated) {
-      this.props.history.push("../../home");
-    }
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("../../home");
-    }
-
-    if (nextProps.errors) {
-      this.setState({
-        errors: nextProps.errors,
-      });
-    }
-  }
-
-  onChange = (e) => {
-    this.setState({ [e.target.id]: e.target.value });
-  };
-
-  onSubmit = (e) => {
-    e.preventDefault();
-
-    const userData = {
-      email: this.state.email,
-      password: this.state.password,
-    };
-    
-    localStorage.setItem('username', JSON.stringify(userData.email))
-    this.props.loginUser(userData);
-  };
-
-  render() {
-    const { errors } = this.state;
-
-    return (
+function Login() {
+  return (
+    <div id="facadeHero">
       <div className="container" id="loginCard">
         <h1>Frogtown Farm</h1>
-        <p>Urban farm project</p>
+        <p id="StPaul">St. Paul, Minnesota</p>
         <div className="row">
-          <div className="col s8 offset-s2">
-            <form noValidate onSubmit={this.onSubmit}>
+            <div className="col s8 offset-s2">
               <div className="input-field col s12">
-                <input
-                  onChange={this.onChange}
-                  value={this.state.email}
-                  error={errors.email}
-                  placeholder="Email"
-                  id="email"
-                  type="email"
-                  className={classnames("form-control", {
-                    invalid: errors.email || errors.emailnotfound,
-                  })}
-                />
-
-                <span className="red-text">
-                  {errors.email}
-                  {errors.emailnotfound}
-                </span>
+                <input placeholder="Email" id="email" type="email" />
+                <span className="red-text"></span>
               </div>
               <div className="input-field col s12">
-                <input
-                  onChange={this.onChange}
-                  value={this.state.password}
-                  error={errors.password}
-                  placeholder="Password"
-                  id="password"
-                  type="password"
-                  className={classnames("form-control", {
-                    invalid: errors.password || errors.passwordincorrect,
-                  })}
-                />
-
-                <span className="red-text">
-                  {errors.password}
-                  {errors.passwordincorrect}
-                </span>
+                <input placeholder="Password" id="password" type="password" />
+                <span className="red-text"></span>
               </div>
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-                <button type="submit" className="btn btn-success">
-                  Login
-                </button>
-                <p className="grey-text text-darken-1">
-                  Don't have an account? <Link to="/register">Register</Link>
-                </p>
+                <a href="home">
+                  <button
+                    className="btn btn-success"
+                    style={{
+                      width: "150px",
+                      borderRadius: "3px",
+                      marginTop: "1rem",
+                    }}
+                  >
+                    Login
+                  </button>
+                </a>
               </div>
-            </form>
-          </div>
+            </div>
+          <Register></Register>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-Login.propTypes = {
-  loginUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = (state) => ({
-  auth: state.auth,
-  errors: state.errors,
-});
-
-export default connect(mapStateToProps, { loginUser })(Login);
+export default Login;

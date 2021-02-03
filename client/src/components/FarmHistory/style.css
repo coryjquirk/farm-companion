@@ -1,0 +1,30 @@
+#historyPages {
+  padding: 25px 30px 25px 30px;
+}
+#externalLink {
+  color: rgb(145, 145, 145);
+  font-size: small;
+}
+#farmSign {
+  width: 350px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+@media screen and (max-width: 600px) {
+  #farmSign {
+    width: 40%;
+    margin: 5px 10px 5px 0px;
+  }
+}
+.mapouter {
+  position: relative;
+  text-align: left;
+  height: 491px;
+  width: 100%;
+}
+.gmap_canvas {
+  margin: 0px 0px 15px 0px;
+  overflow: hidden;
+  background: none !important;
+  height: 491px;
+  width: 100%;}

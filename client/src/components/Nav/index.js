@@ -1,11 +1,15 @@
 import React from "react";
 import "./style.css";
+import FrogtownLogo from "./logo512.png";
+// https://react-popup.elazizi.com/
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 function Nav() {
   return (
-    <nav id="farmNav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="farmNav" className="navbar navbar-expand-lg navbar-light bg-light">
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -13,42 +17,69 @@ function Nav() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbarList">
-          <li>
-            <a href="https://frogtownfarm.herokuapp.com"><img id="ffLogo" src="https://handsontwincities.galaxydigital.com/content/handsontwincities.galaxydigital.com/agency/89969.jpg?1535644146?area=agency" alt="frogtown farm logo"/></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/home">
-              Home
+      <a href="/">
+        <img id="mobileLogo" src={FrogtownLogo} alt="frogtown farm logo" />
+      </a>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbarList" id="navbar-nav">
+          <li className="nav-link">
+            <a href="/">
+              <img
+                id="desktopLogo"
+                src={FrogtownLogo}
+                alt="frogtown farm logo"
+              />
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/inventory">
-              Inventory
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/home">
+              HOME
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/timecard">
-              Time card
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/inventoryhome">
+              INVENTORY
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/handbook">
-              Handbook
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/timecard">
+              TIME CLOCK
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/options">
-              Options
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/handbook">
+              HANDBOOK
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/dashboard">
-              Sign out
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/directoryhome">
+              DIRECTORY
             </a>
+          </li>
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/documenthome">
+              DOCUMENTS
+            </a>
+          </li>
+          <li className="mainNav nav-item">
+            <a className="nav-link" href="/farmmap">
+              MAP
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/options">
+              OPTIONS
+            </a>
+          </li>
+          <li className="nav-item">
+            <Popup
+              trigger={<span className="nav-link">SIGN OUT</span>}
+              position="right center"
+            >
+              <div className="my-popup">Authentication coming soon!</div>
+            </Popup>
           </li>
         </ul>
       </div>

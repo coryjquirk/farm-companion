@@ -1,19 +1,13 @@
 import React from "react";
-import { Col, Row, Container } from "../components/Grid";
-import Jumbotron from "../components/Jumbotron";
+import {Container } from "../components/Grid";
+import NoMatch from "../components/NoMatch"
 
-const NoMatch = () => {
+const NoMatchPage = () => {
   return (
     <Container fluid>
-      <Row>
-        <Col size="md-12">
-          <Jumbotron>
-            <h1>404 page not found</h1>
-          </Jumbotron>
-        </Col>
-      </Row>
+      <NoMatch></NoMatch>
     </Container>
   );
 };
 
-export default NoMatch;
+export default NoMatchPage;

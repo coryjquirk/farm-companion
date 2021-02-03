@@ -1,0 +1,21 @@
+#partnersLogos{
+    width: 75%;
+    margin: 0px 0px 0px 80px
+}
+#pageHeading{
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    #pageHeading{
+        font-size: medium;
+    }
+    #partnersLogos{
+        margin: 0px 0px 0px 50px
+
+    }
+}
+@media screen and (max-width: 400px) {
+    #partnersLogos{
+        margin: 0px 0px 0px 30px
+    }
+}

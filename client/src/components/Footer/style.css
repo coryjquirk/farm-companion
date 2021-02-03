@@ -9,10 +9,12 @@
     background-color: rgb(61, 61, 61);
     color: rgb(175, 175, 175);
     text-align: center;
+    font-family: 'Roboto';
   }
   .footer p {
-    background-color: rgba(61, 61, 61, 0.747);
-    font-size: 1.5rem;
+    /* background-color: rgba(61, 61, 61, 0.747); */
+    color: white;
+    font-size: 12px;
     line-height: 30px;
   }
   

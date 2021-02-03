@@ -1,23 +1,37 @@
 .App {
   text-align: left;
 }
-
+/* Roboto & adobe-garamond-pro to mirror current Frogtown Farm site */
+body{
+  font-family: 'Roboto', sans-serif;
+  
+}
+body p, body h1, body h2, body h3{
+  font-family: AGaramond;
+}
+@font-face {
+  font-family: 'AGaramond';
+  src: local('AGaramond'), url(./fonts/AGaramond-Regular.otf) format('opentype');
+}
 .fader {
-  animation: fadeIn ease .3s;
-  -webkit-animation: fadeIn ease .3s;
-  -moz-animation: fadeIn ease .3s;
-  -o-animation: fadeIn ease .3s;
-  -ms-animation: fadeIn ease .3s;
+  margin: 80px 100px 100px 200px;
+  animation: fadeIn ease 0.3s;
+  -webkit-animation: fadeIn ease 0.3s;
+  -moz-animation: fadeIn ease 0.3s;
+  -o-animation: fadeIn ease 0.3s;
+  -ms-animation: fadeIn ease 0.3s;
+}
+#backBtn{
+  margin: 5px 5px 5px 5px;
 }
 @keyframes fadeIn {
   0% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
-
 @-moz-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -26,7 +40,6 @@
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -35,7 +48,6 @@
     opacity: 1;
   }
 }
-
 @-o-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -44,12 +56,26 @@
     opacity: 1;
   }
 }
-
 @-ms-keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .fader {
+    margin: 140px 10px 0px 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fader {
+    margin: 140px 5px 0px 5px;
+  }
+  .container-fluid{
+    padding-left: 0px;
+    padding-right:0px;
   }
 }

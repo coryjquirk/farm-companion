@@ -1,0 +1,36 @@
+#scrollUp {
+    background: white;
+    border-radius: 5px;
+    border: none;
+}
+.scrollTop {
+    position: fixed; 
+    bottom: 70px;
+    right: 100px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+  
+  .scrollTop:hover{
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .scrollTop {
+      right: 30px;
+  }
+  }
+  @media screen and (max-width: 450px) {
+    .scrollTop {
+      right: 10px;
+  }
+  }
