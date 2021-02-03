@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import TimeCard from "./index.js";
 // https://react-popup.elazizi.com/
-import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react

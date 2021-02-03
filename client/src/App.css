@@ -2,16 +2,18 @@
   text-align: left;
 }
 /* Roboto & adobe-garamond-pro to mirror current Frogtown Farm site */
-body{
-  font-family: 'Roboto', sans-serif;
-  
+body {
+  font-family: "Roboto", sans-serif;
 }
-body p, body h1, body h2, body h3{
+body p,
+body h1,
+body h2,
+body h3 {
   font-family: AGaramond;
 }
 @font-face {
-  font-family: 'AGaramond';
-  src: local('AGaramond'), url(./fonts/AGaramond-Regular.otf) format('opentype');
+  font-family: "AGaramond";
+  src: local("AGaramond"), url(./fonts/AGaramond-Regular.otf) format("opentype");
 }
 .fader {
   margin: 80px 100px 100px 200px;
@@ -21,7 +23,11 @@ body p, body h1, body h2, body h3{
   -o-animation: fadeIn ease 0.3s;
   -ms-animation: fadeIn ease 0.3s;
 }
-#backBtn{
+#loadingScrn {
+  display: block;
+  margin: 0px auto 0px auto;
+}
+#backBtn {
   margin: 5px 5px 5px 5px;
 }
 @keyframes fadeIn {
@@ -74,8 +80,8 @@ body p, body h1, body h2, body h3{
   .fader {
     margin: 140px 5px 0px 5px;
   }
-  .container-fluid{
+  .container-fluid {
     padding-left: 0px;
-    padding-right:0px;
+    padding-right: 0px;
   }
 }

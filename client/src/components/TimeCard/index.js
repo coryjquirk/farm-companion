@@ -4,13 +4,11 @@ import "reactjs-popup/dist/index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import WeekSheet from "./WeekSheet";
-import Stopwatch from "./Stopwatch/Stopwatch.jsx";
 import StopwatchHistory from "./Stopwatch/StopwatchHistory.jsx";
 import Calendar from 'react-calendar'
 //this Modalrino dependency needs to stay to keep Modal working. idk why
 import Modalrino from "../Modalrino";
 import Modal from "react-modal";
-import { when } from "jquery";
 Modal.setAppElement("#root");
 
 function updateTime(k) {
@@ -62,7 +60,7 @@ function TimeCard() {
   const [userClockedIn, clockedIn] = useState(false);
   const [time, setTime] = useState(" ");
   const [stopwatchVal, setSeconds] = useState(null);
-
+  //another option https://dev.to/gspteck/create-a-stopwatch-in-javascript-2mak
   function clockIn() {
     clockedIn(true);
   }
