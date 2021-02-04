@@ -4,19 +4,20 @@ import "reactjs-popup/dist/index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import WeekSheet from "./WeekSheet";
+import Stopwatch from "./Stopwatch/Stopwatch.jsx";
+import StopwatchDisplay from "./Stopwatch/StopwatchDisplay.jsx";
 import StopwatchHistory from "./Stopwatch/StopwatchHistory.jsx";
 import Calendar from "react-calendar";
 //this Modalrino dependency needs to stay to keep Modal working. idk why
 import Modalrino from "../Modalrino";
 import Modal from "react-modal";
 Modal.setAppElement("#root");
-
-function updateTime(k) {
-  if (k < 10) {
-    return "0" + k;
-  } else {
-    return k;
-  }
+function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  return hour + " : " + min + " : " + sec;
 }
 function getCurrentDate(separator = " ") {
   let newDate = new Date();
@@ -71,24 +72,12 @@ function TimeCard() {
   function openModal() {
     setIsOpen(true);
   }
-
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
   }
   function closeModal() {
     setIsOpen(false);
   }
-  function currentTime() {
-    var date = new Date(); /* creating object of Date class */
-    var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
-    hour = updateTime(hour);
-    min = updateTime(min);
-    sec = updateTime(sec);
-    return hour + " : " + min + " : " + sec;
-  }
-
   useEffect(() => {
     const interval = setInterval(() => {
       setSeconds((stopwatchVal) => stopwatchVal + 1);
@@ -118,73 +107,8 @@ function TimeCard() {
     <div className="stopWatch">
       <h1 id="title">Time Clock</h1>
       <div>
-        {userClockedIn === true && <p>CLOCKED IN</p>}
-        {userClockedIn === false && <p>CLOCKED OUT</p>}
-        <div className={"stopwatch"}>
-          <p>{time}</p>
-          <div id="lightGrey">
-            <p className="fader">
-            {userClockedIn === true && (<p className={"stopwatch__display"}>
-                <span id="stopwatchNumber">{stopwatchVal}</span>
-              </p>
-            )}
-            </p>
-            {userClockedIn === true && (
-              <button
-                id="startResetStop"
-                className="btn btn-success meStopwatchBtn"
-                onClick={clockOut}
-              >
-                CLOCK OUT
-              </button>
-            )}
-            {userClockedIn === false && (
-              <button
-                id="startResetStop"
-                className="btn btn-success meStopwatchBtn"
-                onClick={clockIn}
-              >
-                CLOCK IN{" "}
-              </button>
-            )}
-            <button
-              id="startResetStop"
-              className="btn btn-success meStopwatchBtn"
-              onClick={clockOut}
-            >
-              RESET
-            </button>
-            <div className="form-group">
-              <label className="col-md-4 control-label" htmlFor="textarea">
-                shift notes
-              </label>
-              <div className="col-md-4">
-                <textarea
-                  className="form-control"
-                  id="textarea"
-                  name="textarea"
-                  placeholder="type something..."
-                ></textarea>
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label className="col-md-4 control-label" htmlFor="filebutton">
-                add files
-              </label>
-              <div id="fileBtn" className="col-md-4">
-                <input
-                  id="filebutton"
-                  name="filebutton"
-                  className="input-file"
-                  type="file"
-                />
-              </div>
-            </div>
-          </div>
-          <hr></hr>
-          <StopwatchHistory />
-        </div>
+      <p>{time}</p>
+        <Stopwatch />
       </div>
       <p>
         <button id="viewWeek" onClick={openModal} className="btn btn-primary">

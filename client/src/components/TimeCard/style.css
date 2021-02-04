@@ -1,8 +1,3 @@
-
-
-
-
-
 .stopWatch{
   margin: 0px 0px 150px 0px;
 }
@@ -32,6 +27,15 @@
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
   font-weight: bold;
   font-size: medium;
+}
+#resetAdvise p{
+  font-size: small;
+  float: left;
+}
+#resetAdvise button{
+  display: block;
+  clear: both;
+  margin: 0px 0px 0px 0px;
 }
 #shiftNotes{
   height: 200px;
