@@ -1,6 +1,4 @@
 .ReactModal__Content {
-  height: 75%;
-  width: 75%;
   border-radius: 5px;
   padding: 8px 8px 8px 8px;
   margin: 100px 100px 100px 20%;
@@ -27,21 +25,15 @@
 }
 @media only screen and (max-width: 992px) {
   .ReactModal__Content {
-    height: auto;
-    width: auto;
-
-    max-width: 500px;
-    max-height: 80%;
-    margin: 130px 100px 100px 10%;
-}
+    margin: 130px 10px 100px 10px;
+  }
 }
 @media screen and (max-width: 600px) {
   .ReactModal__Content {
-    margin: 130px 100px 100px 5%;
+    margin: 130px 10px 100px 10px;
   }
 }
-@media screen and (max-width: 450) {
-    .ReactModal__Content {
-        margin: 130px 30px 0px 5%;
-    }
+@media screen and (max-width: 450px) {
+  .ReactModal__Content {
   }
+}

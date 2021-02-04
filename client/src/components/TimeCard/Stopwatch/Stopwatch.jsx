@@ -14,16 +14,7 @@ class Stopwatch extends React.Component {
       currentTimeMin: 0,
     };
   }
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        curTime: new Date().toLocaleString()
-      })
-    }, 1000)
-  }
-  state = {
-    curTime: null,
-  }
+
   formatTime = (val, ...rest) => {
     let value = val.toString();
     if (value.length < 2) {
@@ -70,37 +61,52 @@ class Stopwatch extends React.Component {
   render() {
     return (
       <div className={'stopwatch'}>
-        <p>{this.state.curTime}</p>
         <div id="lightGrey">
-          <p id="stopwatchNumber" className="fader">
-            <StopwatchDisplay
-              ref="display"
-              {...this.state}
-              formatTime={this.formatTime}
-            /></p>
-          {this.state.running === false && (
-            <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.start}>START STOPWATCH</button>
-          )}
-          {this.state.running === true && (
-            <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.stop}>STOP STOPWATCH</button>
-          )}
-          <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.reset}>RESET</button>
-          <div class="form-group">
-            <label class="col-md-4 control-label" for="textarea">shift notes</label>
-            <div class="col-md-4">
-              <textarea class="form-control" id="textarea" name="textarea" placeholder="type something..."></textarea>
+        <p id="stopwatchNumber" className="fader">
+        {this.state.running === false && <p>CLOCKED OUT</p>}
+        {this.state.running === true && <p>CLOCKED IN</p>}
+        <StopwatchDisplay
+          useRef="display"
+          {...this.state}
+          formatTime={this.formatTime}
+        /></p>
+        {this.state.running === false && (
+          <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.start}>CLOCK IN</button>
+        )}
+        {this.state.running === true && (
+          <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.stop}>CLOCK OUT</button>
+        )}
+        <button id="startResetStop" class="btn btn-success meStopwatchBtn" onClick={this.reset}>RESET</button>
+        <div className="form-group">
+              <label className="col-md-4 control-label" htmlFor="textarea">
+                shift notes
+              </label>
+              <div className="col-md-4">
+                <textarea
+                  className="form-control"
+                  id="textarea"
+                  name="textarea"
+                  placeholder="type something..."
+                ></textarea>
+              </div>
             </div>
-          </div>
-
-          <div class="form-group">
-            <label class="col-md-4 control-label" for="filebutton">add files</label>
-            <div  id="fileBtn" class="col-md-4">
-              <input id="filebutton" name="filebutton" class="input-file" type="file" />
+            <div className="form-group">
+              <label className="col-md-4 control-label" htmlFor="filebutton">
+                add files
+              </label>
+              <div id="fileBtn" className="col-md-4">
+                <input
+                  id="filebutton"
+                  name="filebutton"
+                  className="input-file"
+                  type="file"
+                />
+              </div>
             </div>
-          </div>
         </div>
         <hr></hr>
         <StopwatchHistory {...this.state} formatTime={this.formatTime} />
+        <hr></hr>
       </div>
     );
   }

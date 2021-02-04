@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
@@ -7,6 +7,10 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 function FarmMap() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 4000);
+  }, []);
   return (
     <div className="mapouter">
       <p>
@@ -37,6 +41,8 @@ function FarmMap() {
             />{" "}946 Minnehaha Ave W St Paul, MN 55104
         </a>{" "}(Google Maps link)
       </p>
+      {loading === false ? (
+
       <div className="gmap_canvas">
         <iframe
           title="farm map"
@@ -50,6 +56,13 @@ function FarmMap() {
           marginwidth="0"
         ></iframe>
       </div>
+      ) : (
+        <img
+          id="loadingScrn"
+          src="https://i.imgur.com/ZljUeZh.gif"
+          alt="loadingscreen"
+        ></img>
+      )}
       <a href="/home">
         <button id="goinHomeBtn" type="button" className="btn btn-success">
           <span>
