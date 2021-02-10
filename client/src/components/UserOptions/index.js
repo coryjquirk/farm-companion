@@ -3,9 +3,10 @@ import "./style.css";
 // https://react-popup.elazizi.com/
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function UserOptions() {
   return (
@@ -17,10 +18,10 @@ function UserOptions() {
         </p>
         <ui>
           <li>
-            <button>This</button>
+            <button class="btn btn-info">This</button>
           </li>
           <li>
-            <button>That</button>
+            <button class="btn btn-dark">That</button>
           </li>
         </ui>
         <p>
@@ -29,24 +30,52 @@ function UserOptions() {
         <label for="plants">Choose your plant:</label>
         {"  "}
 
-        <select name="plants" id="plants">
-          <option value="hibiscus">Hibuscus</option>
-          <option value="chamomile">Chamomile</option>
-          <option value="lavender">Lavender</option>
-          <option value="sage">Sage</option>
-        </select>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Dropdown button
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">
+              Hibuscus
+            </a>
+            <a class="dropdown-item" href="#">
+              Chamomile
+            </a>
+            <a class="dropdown-item" href="#">
+              Lavender
+            </a>
+            <a class="dropdown-item" href="#">
+              Sage
+            </a>
+          </div>
+        </div>
         <hr />
         <Popup
-          trigger={<button>Submit changes</button>}
+          trigger={<button class="btn btn-primary">Submit changes</button>}
           position="right center"
         >
           <div className="my-popup">Success!!</div>
         </Popup>
       </div>
-      <a href="/inventoryhome">
-        <button id="backBtn" class="btn btn-success">
-          {" "}
-          <FontAwesomeIcon icon={faArrowLeft} id="close window" />
+      
+      <a href="/home">
+        <button id="goinHomeBtn" type="button" className="btn btn-success">
+          <span>
+            <FontAwesomeIcon
+              id="goinHome"
+              icon={faArrowLeft}
+              className="fas fa-home"
+            />{" "}
+            Return home{" "}
+            <FontAwesomeIcon id="goinHome" icon={faHome} className="fas fa-home" />
+          </span>
         </button>
       </a>
     </div>

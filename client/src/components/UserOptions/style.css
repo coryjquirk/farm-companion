@@ -1,6 +1,7 @@
-#userOptions{
-padding:30px 30px 30px 30px;
-border-radius: 15px;
-background-color: rgb(77, 77, 77);
-color: rgb(255, 255, 255)
+#userOptions {
+    margin: 0px 0px 10px 0px;
+  padding: 30px 30px 30px 30px;
+  border-radius: 15px;
+  background-color: rgb(77, 77, 77);
+  color: rgb(255, 255, 255);
 }
