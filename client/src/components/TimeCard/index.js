@@ -110,25 +110,9 @@ function TimeCard() {
       <p>{time}</p>
         <Stopwatch />
       </div>
-      <p>
-        <button id="viewWeek" onClick={openModal} className="btn btn-primary">
-          View Week
-        </button>
-      </p>
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        contentLabel="modal"
-        className="Modal"
-      >
-        <button id="closeModal" className="btn btn-danger" onClick={closeModal}>
-          <FontAwesomeIcon icon={faWindowClose} id="close window" />
-        </button>
         <p>{currentTime()}</p>
         <p>{getCurrentDate()} </p>
         <WeekSheet />
-      </Modal>
       <h3>Calendar</h3>
       <Calendar />
     </div>

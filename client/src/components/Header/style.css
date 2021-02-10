@@ -10,11 +10,21 @@
   text-align: center;
   border-top: 7px solid #7a49a5;
 }
+#optionsBtn{
+  color: #6c757d;
+  position: fixed; 
+  top: 18px;
+  left: 200px;
+  z-index: 100;
+}
 @media only screen and (max-width: 992px) {
   .header {
     height: 125px;
-    border-bottom: 5px solid #BCA4D2
-
-    ;
+    border-bottom: 5px solid #BCA4D2;
+  }
+  #optionsBtn{
+    top: 95px;
+    left: initial;
+    right: 5px;
   }
 }
