@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Frogtown Farm",
+  "name": "Frogtown Farm Admin",
+  "description": "secure admin website",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +19,8 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "start_url": "./index.html",
+  "display": "minimal-ui",
+  "theme_color": "#9993c3",
+  "background_color": "#97d79f"
 }

@@ -45,7 +45,7 @@ function FarmMap() {
 
       <div className="gmap_canvas">
         <iframe src="https://storymaps.arcgis.com/stories/52354515142b4631a1e09d402743d36e?cover=false" width="100%"id="gmap_canvas"
- height="500px" title="ArcGISstorymap" frameborder="0" allowfullscreen allow="geolocation"></iframe>
+ height="500px" title="ArcGISstorymap" frameBorder="0" allowFullScreen allow="geolocation"></iframe>
         <iframe
           title="farm map"
           width="646"
@@ -53,8 +53,8 @@ function FarmMap() {
           src="https://maps.google.com/maps?q=941%20Lafond%20Ave,%20St%20Paul,%20MN%2055104&t=&z=17&ie=UTF8&iwloc=&output=embed"
           frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
         ></iframe>
       </div>
       ) : (
