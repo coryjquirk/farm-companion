@@ -5,10 +5,10 @@ deployed development stage app: https://frogtownfarm.herokuapp.com/
 https://www.frogtownfarm.org/  
 
 ## technologies  
-MERN stack  
+* MERN stack  
   * MongoDB, Express.js, React.js, Node.js  
   * self-contained user authentication  
-Front end  
+* Front end  
   * Bootstrap  
   * Fontawesome  
 
