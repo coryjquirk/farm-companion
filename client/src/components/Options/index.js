@@ -1,8 +1,5 @@
 import React from "react";
 import "./style.css";
-// https://react-popup.elazizi.com/
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
@@ -57,12 +54,6 @@ function Options() {
           </div>
         </div>
         <hr />
-        <Popup
-          trigger={<button class="btn btn-primary">Submit changes</button>}
-          position="right center"
-        >
-          <div className="my-popup">Success!!</div>
-        </Popup>
       </div>
       
       <a href="/">
