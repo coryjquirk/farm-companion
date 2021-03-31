@@ -15,7 +15,6 @@ Front end
 `npm install`  
 `npm run client-install`  
 
-
 https://www.frogtownfarm.org/  
 must use `npm run dev` to run app locally  
 
