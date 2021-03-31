@@ -1,4 +1,4 @@
-module.exports = {
-  mongoURI: process.env.MONGODB_URI || "mongodb://localhost/frogtownFarm",
-  secretOrKey: "secret",
-};
+ module.exports = {
+    mongoURI: "mongodb+srv://coryquirk:6A&t8CT@cluster0.3nsii.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" ,
+    secretOrKey: "secret"
+  };

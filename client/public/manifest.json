@@ -1,6 +1,6 @@
 {
-  "short_name": "Frogtown Farm",
-  "name": "Admin Site - Development Server",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -15,8 +15,7 @@
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any maskable"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",

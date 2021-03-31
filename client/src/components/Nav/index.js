@@ -34,12 +34,12 @@ function Nav() {
             </a>
           </li>
           <li className="mainNav nav-item">
-            <a className="nav-link" href="/home">
+            <a className="nav-link" href="/">
               HOME
             </a>
           </li>
           <li className="mainNav nav-item">
-            <a className="nav-link" href="/inventoryhome">
+            <a className="nav-link" href="/inventory">
               INVENTORY
             </a>
           </li>
@@ -54,12 +54,12 @@ function Nav() {
             </a>
           </li>
           <li className="mainNav nav-item">
-            <a className="nav-link" href="/directoryhome">
+            <a className="nav-link" href="/directory">
               DIRECTORY
             </a>
           </li>
           <li className="mainNav nav-item">
-            <a className="nav-link" href="/documenthome">
+            <a className="nav-link" href="/documents">
               DOCUMENTS
             </a>
           </li>
@@ -74,12 +74,9 @@ function Nav() {
             </a>
           </li>
           <li className="nav-item">
-            <Popup
-              trigger={<span className="nav-link">SIGN OUT</span>}
-              position="right center"
-            >
-              <div className="my-popup">Authentication coming soon!</div>
-            </Popup>
+            <a className="nav-link" href="/logout">
+              SIGN OUT
+            </a>
           </li>
         </ul>
       </div>

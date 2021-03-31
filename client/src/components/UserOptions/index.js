@@ -14,7 +14,7 @@ function UserOptions() {
       <div id="userOptions">
         <h3>User Options</h3>
         <p id="subText">
-          (This site is still in development, so this page is just for show)
+          this site is still in development. this page is just for show.
         </p>
         <ui>
           <li>
@@ -65,7 +65,7 @@ function UserOptions() {
         </Popup>
       </div>
       
-      <a href="/home">
+      <a href="/">
         <button id="goinHomeBtn" type="button" className="btn btn-success">
           <span>
             <FontAwesomeIcon

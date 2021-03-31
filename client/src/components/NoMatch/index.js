@@ -23,7 +23,7 @@ function NoMatch() {
           Maybe we're plotting something new here.
           <i className="fas fa-tractor"></i>
         </p>
-        <a href="/home">
+        <a href="/">
           <button id="goinHomeBtn" type="button" className="btn btn-success">
             <span>
             <FontAwesomeIcon

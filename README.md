@@ -1,8 +1,9 @@
-# frogtown-farm
-Urban farm administrative website. Time card, inventory, map.
+# authmern-herokutest
+`npm run install`  
 
-Development stage app: https://frogtownfarm.herokuapp.com/
+`npm run client install`  
+must use `npm run dev` to run app locally  
 
-<a href="https://www.frogtownfarm.org/"><img src="https://handsontwincities.galaxydigital.com/content/handsontwincities.galaxydigital.com/agency/89969.jpg?1535644146?area=agency" alt="Frogtown Farm logo"></a>
-<br>
-https://www.frogtownfarm.org/
+https://github.com/bradtraversy/mern_shopping_list
+
+https://www.youtube.com/watch?v=USaB1adUHM0&ab_channel=TraversyMedia

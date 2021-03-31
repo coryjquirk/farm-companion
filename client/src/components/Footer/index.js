@@ -5,9 +5,8 @@ function Footer() {
   return (
     <div className="footer fixed-bottom">
       <p>
-        <a href="https://www.github.com/coryjquirk/frogtown-farm">
-          prototype by Cory J. Quirk ©2021{" "}
-          <i className="fa fa-github" alt="github icon" /> view code here
+        <a href="https://www.github.com/coryjquirk/frogtown-farm">blueprint by Cory Quirk and Keanue Driscoll-Cherland ©2021{" "}
+          <i className="fa fa-github" alt="github icon" /> view code
         </a>
       </p>
     </div>
