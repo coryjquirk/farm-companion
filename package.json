@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "testing mern passport authentication",
   "main": "server.js",
+  "engines": {
+    "node": "12.18.3"
+  }
   "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
