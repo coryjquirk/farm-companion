@@ -1,5 +1,5 @@
 # authmern-herokutest
-setup:
+setup:  
 `npm install`  
 `npm run client-install`  
   
