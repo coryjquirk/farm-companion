@@ -5,8 +5,13 @@
 #hideColumn {
   display: none;
 }
-#title {
+#title{
   text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+#wip{
+  text-align: center;
+  font-size: small;
   margin: 0px 0px 30px 0px;
 }
 .timeClockBtn {

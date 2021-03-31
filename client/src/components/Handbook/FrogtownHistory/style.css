@@ -1,0 +1,15 @@
+#farmHistory{
+    padding: 25px 30px 25px 30px;
+}
+#subText{
+    color: rgb(204, 204, 204);
+    font-size: small;
+}
+#historyLinks{
+    background-color: #DDD1E8;
+}
+@media screen and (min-width: 820) {
+    #farmHistory{
+        max-width: 80%;
+    }
+}

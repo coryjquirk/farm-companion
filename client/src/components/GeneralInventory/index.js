@@ -4,7 +4,7 @@ import "./style.css";
 function GeneralInventory() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4000);
+    setTimeout(() => setLoading(false), 1000);
   }, []);
   return (
     <div>

@@ -15,7 +15,7 @@ const cardStyle = {
 function Handbook() {
   return (
     <div>
-      <a href="/frogtownhistory">
+      <a href="/handbook/frogtownhistory">
         <div className="homeLauncher" style={cardStyle}>
           <h3> 
             <FontAwesomeIcon
@@ -28,7 +28,7 @@ function Handbook() {
           </h3>
         </div>
       </a>
-      <a href="/farmhistory">
+      <a href="/handbook/farmhistory">
         <div className="homeLauncher" style={cardStyle}>
           <h3><FontAwesomeIcon
                 id="goinHome"
@@ -39,29 +39,18 @@ function Handbook() {
           </h3>
         </div>
       </a>
-      <a href="/partners">
+      <a href="/handbook/supporters">
         <div className="homeLauncher" style={cardStyle}>
           <h3><FontAwesomeIcon
                 id="goinHome"
                 icon={faBook}
                 className="fas fa-book"
               />{"  "}
-            <span>Community partners</span>
+            <span>Community supporters</span>
           </h3>
         </div>
       </a>
-      <a href="/whatwedo">
-        <div className="homeLauncher" style={cardStyle}>
-          <h3><FontAwesomeIcon
-                id="goinHome"
-                icon={faBook}
-                className="fas fa-book"
-              />{"  "}
-            <span>What we do</span>
-          </h3>
-        </div>
-      </a>
-      <a href="/home">
+      <a href="/">
         <div className="homeLauncher" style={cardStyle}>
           <h3 className="text-muted">
             <span><FontAwesomeIcon

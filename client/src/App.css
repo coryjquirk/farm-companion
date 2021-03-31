@@ -11,6 +11,9 @@ body h2,
 body h3 {
   font-family: AGaramond;
 }
+.input-field button{
+margin: 10px 10px 10px 0px;
+display: block;}
 @font-face {
   font-family: "AGaramond";
   src: local("AGaramond"), url(./fonts/AGaramond-Regular.otf) format("opentype");

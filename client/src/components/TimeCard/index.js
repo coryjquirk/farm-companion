@@ -8,8 +8,6 @@ import Stopwatch from "./Stopwatch/Stopwatch.jsx";
 import StopwatchDisplay from "./Stopwatch/StopwatchDisplay.jsx";
 import StopwatchHistory from "./Stopwatch/StopwatchHistory.jsx";
 import Calendar from "react-calendar";
-//this Modalrino dependency needs to stay to keep Modal working. idk why
-import Modalrino from "../Modalrino";
 import Modal from "react-modal";
 Modal.setAppElement("#root");
 function currentTime() {
@@ -105,16 +103,22 @@ function TimeCard() {
 
   return (
     <div className="stopWatch">
-      <h1 id="title">Time Clock</h1>
+      <h1 id="title">Time Clock</h1> 
+      <h3 id="wip">work in progress</h3>
       <div>
       <p>{time}</p>
         <Stopwatch />
       </div>
-        <p>{currentTime()}</p>
+        {/* <p>{currentTime()}</p>
         <p>{getCurrentDate()} </p>
+        hiding this stuff for now
         <WeekSheet />
       <h3>Calendar</h3>
-      <Calendar />
+      <Calendar /> */}
+
+
+
+
     </div>
   );
 }

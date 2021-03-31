@@ -9,7 +9,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 function FarmMap() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4000);
+    setTimeout(() => setLoading(false), 1000);
   }, []);
   return (
     <div className="mapouter">
@@ -63,7 +63,7 @@ function FarmMap() {
           alt="loadingscreen"
         ></img>
       )}
-      <a href="/home">
+      <a href="/">
         <button id="goinHomeBtn" type="button" className="btn btn-success">
           <span>
             <FontAwesomeIcon

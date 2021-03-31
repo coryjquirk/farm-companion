@@ -12,7 +12,6 @@ const ScrollArrow = () =>{
       setShowScroll(false)
     }
   };
-//if route is Sound setShowScroll false
   const scrollTop = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
   };

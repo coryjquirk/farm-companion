@@ -12,7 +12,7 @@
     font-family: 'Roboto';
   }
   .footer p {
-    /* background-color: rgba(61, 61, 61, 0.747); */
+    background-color: rgba(61, 61, 61, 0.747);
     color: white;
     font-size: 12px;
     line-height: 30px;
