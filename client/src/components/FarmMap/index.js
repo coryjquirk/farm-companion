@@ -44,11 +44,12 @@ function FarmMap() {
       {loading === false ? (
 
       <div className="gmap_canvas">
+        <iframe src="https://storymaps.arcgis.com/stories/52354515142b4631a1e09d402743d36e?cover=false" width="100%"id="gmap_canvas"
+ height="500px" title="ArcGISstorymap" frameborder="0" allowfullscreen allow="geolocation"></iframe>
         <iframe
           title="farm map"
           width="646"
           height="491"
-          id="gmap_canvas"
           src="https://maps.google.com/maps?q=941%20Lafond%20Ave,%20St%20Paul,%20MN%2055104&t=&z=17&ie=UTF8&iwloc=&output=embed"
           frameBorder="0"
           scrolling="no"
@@ -76,7 +77,7 @@ function FarmMap() {
           </span>
         </button>
       </a>
-    </div>
+      </div>
   );
 }
 

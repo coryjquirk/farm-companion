@@ -12,6 +12,8 @@ https://www.frogtownfarm.org/
   * Bootstrap  
   * Fontawesome  
 
+ArcGIS StoryMaps [link to story](https://storymaps.arcgis.com/stories/52354515142b4631a1e09d402743d36e)
+
 ### development setup:  
 `npm install`  
 `npm run client-install`  
