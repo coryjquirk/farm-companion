@@ -11,7 +11,7 @@ import "./App.css";
 import NoMatch from "./components/NoMatch";
 import Navbar from "./components/Nav";
 import Landing from "./components/Landing";
-import Register from "./components/Auth/Register";
+import Register from "./components/Auth/Register.js";
 import Login from "./components/Auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Logout from "./components/Logout";
