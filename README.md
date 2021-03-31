@@ -5,12 +5,12 @@ deployed development stage app: https://frogtownfarm.herokuapp.com/
 https://www.frogtownfarm.org/  
 
 ## technologies  
-MERN stack
-  * MongoDB, Express.js, React.js, Node.js
-  * self-contained user authentication
-Front end
-  * Bootstrap
-  * Fontawesome
+MERN stack  
+  * MongoDB, Express.js, React.js, Node.js  
+  * self-contained user authentication  
+Front end  
+  * Bootstrap  
+  * Fontawesome  
 
 ### development setup:  
 `npm install`  
