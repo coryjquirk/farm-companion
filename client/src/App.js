@@ -18,7 +18,7 @@ import Logout from "./components/Logout";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollArrow from "./components/ScrollArrow";
-import Options from "./components/UserOptions";
+import Options from "./components/Options";
 import Inventory from "./components/Inventory";
 import SeedInventory from "./components/SeedInventory";
 import GeneralInventory from "./components/GeneralInventory";

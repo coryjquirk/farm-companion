@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // https://fontawesome.com/how-to-use/on-the-web/using-with/react
 import { faHome, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-function UserOptions() {
+function Options() {
   return (
     <div>
       <div id="userOptions">
@@ -82,4 +82,4 @@ function UserOptions() {
   );
 }
 
-export default UserOptions;
+export default Options;
