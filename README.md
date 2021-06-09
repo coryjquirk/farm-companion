@@ -1,6 +1,10 @@
 # farm manager app
 deployed development stage app: https://frogtownfarm.herokuapp.com/  
-(give this a minute to start up, it runs on a free-tier server for now)
+(give this a minute to start up, it runs on a free-tier server for now)  
+  
+to demo the app without signing up:  
+**username**: coryjquirk@gmail.com  
+**password**: password123  
 
 ## technologies  
 * MERN stack  
