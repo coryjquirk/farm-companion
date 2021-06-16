@@ -4,7 +4,7 @@ console.log("hola from service worker")
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
-    "/manifest.json",
+    "/manifest.webmanifest",
     "/favicon.ico",
     "favicon.png"
   ];
