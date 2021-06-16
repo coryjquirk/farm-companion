@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import FrogtownLogo from "./logo512.png";
+import FarmLogo from "./logo512.png";
 // https://react-popup.elazizi.com/
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
@@ -20,7 +20,7 @@ function Nav() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <a href="/">
-        <img id="mobileLogo" src={FrogtownLogo} alt="frogtown farm logo" />
+        <img id="mobileLogo" src={FarmLogo} alt="farm logo" />
       </a>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbarList" id="navbar-nav">
@@ -28,8 +28,8 @@ function Nav() {
             <a href="/">
               <img
                 id="desktopLogo"
-                src={FrogtownLogo}
-                alt="frogtown farm logo"
+                src={FarmLogo}
+                alt="farm logo"
               />
             </a>
           </li>
