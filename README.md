@@ -1,5 +1,5 @@
 # farm manager app
-deployed development stage app: https://frogtownfarm.herokuapp.com/  
+deployed development stage app: https://farm-companion.herokuapp.com
 (give this a minute to start up, it runs on a free-tier server for now)  
   
 to demo the app without signing up:  
@@ -20,7 +20,6 @@ ArcGIS StoryMaps [link to story](https://storymaps.arcgis.com/stories/5235451514
 `npm install`  
 `npm run client-install`  
 
-https://www.frogtownfarm.org/  
 must use `npm run dev` to run app locally  
 
 ### future
@@ -28,4 +27,7 @@ must use `npm run dev` to run app locally
 * expanded time card app
 
 ### credits
-brad traversy's mern auth guide [repo](https://github.com/bradtraversy/mern_shopping_list), [vid](https://www.youtube.com/watch?v=USaB1adUHM0&ab_channel=TraversyMedia)
+- cory j. quirk: full stack development
+- keanu driscoll-cherland: concept architect
+### resources
+- brad traversy's mern auth guide [repo](https://github.com/bradtraversy/mern_shopping_list), [vid](https://www.youtube.com/watch?v=USaB1adUHM0&ab_channel=TraversyMedia)
