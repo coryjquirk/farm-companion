@@ -27,7 +27,8 @@ must use `npm run dev` to run app locally
 * expanded time card app
 
 ### credits
-- cory j. quirk: full stack development
-- keanu driscoll-cherland: concept architect
+- cory j. quirk: full stack development  
+- keanu driscoll-cherland: concept architect  
 ### resources
 - brad traversy's mern auth guide [repo](https://github.com/bradtraversy/mern_shopping_list), [vid](https://www.youtube.com/watch?v=USaB1adUHM0&ab_channel=TraversyMedia)
+- [Geometric leaves](https://www.toptal.com/designers/subtlepatterns/geometric-leaves-pattern/) pattern by Mungujakisa Edmond
