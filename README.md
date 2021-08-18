@@ -6,6 +6,8 @@ to demo the app without signing up:
 **username**: coryjquirk@gmail.com  
 **password**: password123  
 
+<img src="https://github.com/coryjquirk/portfolio/blob/master/client/src/components/Blog/Posts/Post7/farm.gif?raw=true" alt="demo-gif">  
+
 ## technologies  
 * MERN stack  
   * MongoDB, Express.js, React.js, Node.js  
