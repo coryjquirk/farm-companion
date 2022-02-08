@@ -6,7 +6,7 @@ to demo the app without signing up:
 **username**: coryjquirk@gmail.com  
 **password**: password123  
 
-<img src="https://github.com/coryjquirk/portfolio/blob/master/client/src/components/Blog/Posts/Post7/farm.gif?raw=true" alt="demo-gif">  
+<img src="https://github.com/coryjquirk/portfolio/blob/main/client/src/components/Blog/Posts/Post7/farm.gif?raw=true" alt="demo-gif">  
 
 ## technologies  
 * MERN stack  
